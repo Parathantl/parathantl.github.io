@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Parathan Thiyagalingam]]></title><description><![CDATA[A personal blog for documenting what I learned]]></description><link>https://parathantl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 21:15:35 GMT</lastBuildDate><item><title><![CDATA[ACID Properties in RDBMS]]></title><description><![CDATA[Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
+Before or after…]]></description><link>https://parathantl.github.io/acid-properties-in-rdbms/</link><guid isPermaLink="false">https://parathantl.github.io/acid-properties-in-rdbms/</guid><pubDate>Sun, 14 Mar 2021 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
+Before or after a transactions happen in a database, these 4 properties will be followed to maintain the integrity of a database management system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: A transaction must be atomic. Transaction should happen or not. It &lt;strong&gt;can not be at a middle state&lt;/strong&gt;. If a transaction became failure while happening no changes would have happen to database. It will be at the previous state where that transaction happened before.
+In Atommicity 2 operations are involved.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Abort&lt;/strong&gt;: Changes made to database are not visible that means they are not saved in the database&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commit&lt;/strong&gt;: Changes made to the database are visible and saved successfully.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Consistency&lt;/strong&gt;:  The correctness of the &lt;strong&gt;integrity constraints&lt;/strong&gt; must be maintained before or after a transaction happened at database to keep the database system always at consistent state. Data type of a record in DB and Foreign key, Primary key are considered as Integrity constraints. So, when a transaction happens DB should check whether the data are right.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: The transactions happening in database should be in an isolation state. It should be public once the transaction is happened successfully. Otherwise, there would be many issues arise. Every transactions happening in the database are independent of others. While a data/record executed during a particular transaction another transaction accessing that data/record is prohibited. The another transaction is only allowed to make use of that data only after the previous transaction done its work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Durability&lt;/strong&gt;: When a database is updated it will remain in the memory (RAM) for a certain period of time and then it will moved to database. In case of any memory failure databases should update themselves with latest updates before the memory gets crashed. The sole purpose of this property is to ensure that the updates done through transactions must become permanent until it changed by any authorized people.&lt;/p&gt;
+&lt;p&gt;Lets take an example to see how each of these properties are evident in making the RDBMS properties:
+Consider person A and person B. Person A (has $500) is going to send $100 to person B ($200)
+While person A transferring the money&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;power failures may have occurred in the middle of the transaction process (where A’s amount deducted but B’s account not added with the amount transferred) and the system would have gone through power failure. At this point after system starts A’s amount deducted and B’s not yet being updated is considered as one of the biggest issue. By considering these &lt;strong&gt;abort&lt;/strong&gt; operation Atomicity property will be executed to abort the transaction so that the transaction is failed and respective people amount is same as it is before.&lt;/li&gt;
+&lt;li&gt;Consistency property is to check whether the respective updated data is correct according to the integrity constraint defined while creating the database. We can put address in the record space where money has to be put as the value.&lt;/li&gt;
+&lt;li&gt;While transaction happening another transaction can not query for the person A’s account details and person B’s details, even though it happens it will give a wrong details. Let’s say while person A is deducted and person B not yet got that if we check for both people’s account details person A has $400 and person B $200. The sum of money before the transaction is ($500 + $200 = $700). When another transaction querying ($400 + $200 = $600). So, this illustrates us that there is no data inconsistency. So, while one transactions happening data involving in the transactions should be isolated.&lt;/li&gt;
+&lt;li&gt;As how its described in the &lt;strong&gt;Durability&lt;/strong&gt; section sum of the final amount of each person before transaction and after transaction should be equal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, that’s all for now. &lt;/p&gt;
+&lt;p&gt;Were you able to understand basic on how RDBMS works?&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Let me here from you now.
+parathan19@gmail.com&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to install python2 and pip on Ubuntu 20.04]]></title><description><![CDATA[Why to install Python2 Most of the applications are now shifted to Python3 and becoming re-written source code. But somehow, some of the not…]]></description><link>https://parathantl.github.io/install-python2-on-ubuntu/</link><guid isPermaLink="false">https://parathantl.github.io/install-python2-on-ubuntu/</guid><pubDate>Thu, 11 Mar 2021 15:00:37 GMT</pubDate><content:encoded>&lt;h4&gt;Why to install Python2&lt;/h4&gt;
+&lt;p&gt;Most of the applications are now shifted to Python3 and becoming re-written source code. But somehow, some of the not evolving scripts which were written on Python2 needs to be executed with the help of Python2.&lt;/p&gt;
+&lt;h4&gt;To install Python2&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install python-minimal&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above command will download the Python2 last version (2.7.15).&lt;/p&gt;
+&lt;p&gt;Check the version using the following command&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python2 --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To check python3 version&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python3 --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To manage the Python packages we need to install pip.&lt;/p&gt;
+&lt;h5&gt;Install pip for python2&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;wget https://bootstrap.pypa.io/pip/2.7/get-pip.py&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;a new file named get-pip.py will be downloaded.&lt;/p&gt;
+&lt;p&gt;Then execute the following command in the terminal&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python2 get-pip.py&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, you have installed pip for python2&lt;/p&gt;
+&lt;p&gt;I am going to download a python2 supported package using pip for python2
+In my case, wikitools&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python2 -m pip install wikitools&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;That’s it. We have installed the Packages for Python2&lt;/h5&gt;</content:encoded></item></channel></rss>
