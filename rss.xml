@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Parathan's blog]]></title><description><![CDATA[A personal blog for documenting what I learned]]></description><link>https://parathantl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 18:42:29 GMT</lastBuildDate><item><title><![CDATA[ACID Properties in RDBMS]]></title><description><![CDATA[Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Parathan's blog]]></title><description><![CDATA[A personal blog for documenting what I learned]]></description><link>https://parathantl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 20:06:21 GMT</lastBuildDate><item><title><![CDATA[ACID Properties in RDBMS]]></title><description><![CDATA[Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
 Before or after…]]></description><link>https://parathantl.github.io/acid-properties-in-rdbms/</link><guid isPermaLink="false">https://parathantl.github.io/acid-properties-in-rdbms/</guid><pubDate>Sun, 14 Mar 2021 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
 Before or after a transactions happen in a database, these 4 properties will be followed to maintain the integrity of a database management system.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: A transaction must be atomic. Transaction should happen or not. It &lt;strong&gt;can not be at a middle state&lt;/strong&gt;. If a transaction became failure while happening no changes would have happen to database. It will be at the previous state where that transaction happened before.
@@ -108,7 +108,634 @@ df = pd.read_csv(“file_name.csv”)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Follow me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Reference:&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DdGVBZv46PI&amp;#x26;feature=emb_title&quot;&gt;Modules&lt;/a&gt;
-&lt;a href=&quot;https://www.youtube.com/watch?v=V27FQ6UBTPY&amp;#x26;feature=emb_title&quot;&gt;Modules, Packages and Libraries in Python Explained&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Threads in Programming]]></title><description><![CDATA[Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some…]]></description><link>https://parathantl.github.io/threads-in-programming/</link><guid isPermaLink="false">https://parathantl.github.io/threads-in-programming/</guid><pubDate>Mon, 15 Jun 2020 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some occurrences where changes occur concurrently like meter measurements or the moving objects in the display. These won’t happen at the same time. Each action is executed under a Thread. But those thread execution changes within &lt;strong&gt;milliseconds&lt;/strong&gt;, to our naked eye we can’t observer what’s happening&lt;/p&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=V27FQ6UBTPY&amp;#x26;feature=emb_title&quot;&gt;Modules, Packages and Libraries in Python Explained&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Design Patterns — Zero to Hero — Decorator Pattern]]></title><description><![CDATA[In this article we are going to learn about a new Decorator Pattern which is belongs to Structural Design Pattern. The Decorator Pattern…]]></description><link>https://parathantl.github.io/design-patterns-zero-to-hero-decorator-pattern/</link><guid isPermaLink="false">https://parathantl.github.io/design-patterns-zero-to-hero-decorator-pattern/</guid><pubDate>Sat, 31 Oct 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;In this article we are going to learn about a new Decorator Pattern which is belongs to Structural Design Pattern. The Decorator Pattern allows users to add new functionalities to an existing object without making any changes to previously written classes/code structure. This pattern act as a wrapper to the existing class/classes.&lt;/p&gt;
+&lt;p&gt;According to Open-closed principle classes should be open for extension, but closed for modification. The main thing we need to consider when writing code is to allow classes to be easily extended to incorporate new behavior without modifying existing code. Even though, Open-closed principle is good coding practice we need to be careful at which place we are using it. Because applying this principle everywhere is wasteful and unnecessary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Class Diagram of Decorator Pattern&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 622px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d00b6b28fa13a3c01a8933c33eb35775/604ec/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 84.81012658227847%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhklEQVQ4y5XTyXLCQAwEUP//50EBxb7v+24gmDwY4qRi5xAdpjySWi31yNEjY7fbbT6fNxqNUqk0GAzW6zXPI8+irOt+v0+n016vt9/vXS+Xy//Ao9EIWAnI8/l8vV75kyTJBwt8fBme5XLZ7Xbb7baeIZXLZ5YNeTqdjscjkjiOQ59OoeAROhwOpuDnTGtF4/FYh51OB49upaaFFZXn3O122+1WgsxQKIwQcbVaLWFVeVFl25vNZs1m0xOoZQr4QP4EozVbGPsnc2qUQwAcZEcg8wnWKu9kMtGYyY0aGg4WGJT24GhUUV3am/nxhwW1NBm/DMBVaZ702aPkhwVOSYb3WgiNl6Zic6W5TjebjbQouyEkLRaLdtNZKBRUCSH81KlUKvV6vVwuV6vVHPBwOJREC0IYdbVapWBOykvg1F0OGMZ6iaVThJCPWq3mh+n3+8AEjnL/CuHFYmHasHwhRC0bhfxbsFxmjSFX+xeY3yBUeG9Y9pFkk9TO0dacKY/v9ss0L+r6CYz61PgaWGV3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/d00b6b28fa13a3c01a8933c33eb35775/604ec/1.png&quot;
+        srcset=&quot;/static/d00b6b28fa13a3c01a8933c33eb35775/c26ae/1.png 158w,
+/static/d00b6b28fa13a3c01a8933c33eb35775/6bdcf/1.png 315w,
+/static/d00b6b28fa13a3c01a8933c33eb35775/604ec/1.png 622w&quot;
+        sizes=&quot;(max-width: 622px) 100vw, 622px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coding Example&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The following is a sample coding part taken as an example to demonstrate Decorator Pattern. A food and beverages delivering application is having variety of food items. Eg: Vegetarian, Non-vegetarian food and beverages with different flavors. If a user orders a Veg food he/she can order different variety of curries for it. For example Vegetarian Food with Indian vegetarian food curries or Chinese vegetarian food. At the same time for non-vegetarian food can be ordered along with Indian vegetarian curries or Chinese food curies.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public abstract class Item { 
+
+	String description = &amp;quot;Unknown Description&amp;quot;;  
+	// getDescription is implemented
+
+	public String getDescription(){  
+		return description;  
+	} 
+	
+	// need to implement Cost in the sub-classes who extends Item Class
+
+	public abstract double cost();
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Abstract Decorator Class Implementation. This Decorator class will be extended by the concrete decorator classes.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public abstract class ItemDecorator extends Item {  
+        public abstract String getDescription();  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Implementing Concrete Class Vegetarian Food&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class VegetarianFood extends Item { 
+
+	public VegetarianFood(){  
+		description = &amp;quot;Basic Vegetarian Food&amp;quot;;   
+		// description is a variable inherited from Item
+	}
+	
+	public double cost()  
+		return 100;  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Similarly, We can define a class for Non-Veg too.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class NonVegetarianFood extends Item {
+
+	public NonVegetarianFood() {  
+		description = &amp;quot;Basic Non-Vegetarian Food with curries&amp;quot;;   
+		// description is a variable inherited from Item 
+	}
+	
+	public double cost()  
+		return 150;  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, Implement Concrete Decorator Pattern&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class IndianVegFood extends ItemDecorator{ 
+
+	Item item;  
+
+	// instance variable to hold the item we are going to wrap
+	public IndianVegFood(Item item){  
+		this.item = item;    
+		// passing the wrapping item
+	}  
+	   
+	publich String getDescription(){  
+		return beverage.getDescription() + &amp;quot;, Indian Veg Curries&amp;quot;;  
+	}  
+	   
+	public double cost(){  
+		return  item.cos() + 50;  
+	}
+
+}
+	
+// Implementation For ChineseVegFoodpublic
+
+class ChineseVegFood extends ItemDecorator { 
+	Item item;  
+	
+	// instance variable to hold the item we are going to wrap
+	public IndianVegFood(Item item){  
+		this.item = item;    
+		// passing the wrapping item
+	}
+	
+	publich String getDescription(){  
+		return item.getDescription() + &amp;quot;, Chinese Veg Curries&amp;quot;;  
+	}  
+	   
+	public double cost(){  
+		return item.cos() + 70;  
+	}
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Calling the app from Main Class&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class MainApp{ 
+
+	public static void main (String args[]) { 
+		Item item = new VegetarianFood();
+		
+		System.out.println(item.getDescription + &amp;quot; $&amp;quot;+ item.cost());
+		Item item1 = new NonVegetarianFood();  
+		item2 = new IndianVegFood(item1);  
+		item2 = new IndianVegFood(item1);  
+		item2 = new ChineseVegFood(item1);
+		
+		System.out.println(item1.getDescription + &amp;quot; $&amp;quot;+ item1.cost());
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;p&gt;Basic Vegetarian Food $100&lt;br&gt;
+Basic Non-Vegetarian Food with curries, Indian Veg Curries, Indian Veg Curries, Chinese Veg Curries $320&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Real World Application usage of Decorator Pattern:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decorator Pattern is used in Java IO classes: FileInputStream acts as abstract decorator pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 360px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0451af8466a5e13cf42b96524926f20a/f21e7/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 38.60759493670886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABKklEQVQY021R206DUBDst+u7H6B/oN/gAzYHEGi4hYRr0XAIhDsUpYBQR1RqE+dh2bPZ3ZlZNqdfzPOM2DRNkiRxHJdlGUXR2yXath2GYR3ZnP6g6zrbtjmOUxRFFEVJkvI8R7FtDwAm67ouimJl2kzThA8iOLMFlmUhdxwHfVVVHY/9uh1tqJyZsSwMQ5SCIEjT1HVdyINsz/P2ey+gcZVsy/COOrddfu+5RlFWZ2ZBEAgh0GmaJsuyDMPouq6q6vYLT4Ioa7uHHbkmj1fq882Lb37f54cZTt4X9H0PTjhEjgiTeOJ4vu9nWW5ZdnNoaUDRP47jx4KLg616oB/OZVl+XaCqCssSbCmLQtM0nucRYfb/YUopTg0vsIArIMEiwzDw/1BBDl8Y/gS4a7avInf7YgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/0451af8466a5e13cf42b96524926f20a/f21e7/2.png&quot;
+        srcset=&quot;/static/0451af8466a5e13cf42b96524926f20a/c26ae/2.png 158w,
+/static/0451af8466a5e13cf42b96524926f20a/6bdcf/2.png 315w,
+/static/0451af8466a5e13cf42b96524926f20a/f21e7/2.png 360w&quot;
+        sizes=&quot;(max-width: 360px) 100vw, 360px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Characteristics of Decorators Patterns&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decorators have the same super type as the objects they decorate&lt;/li&gt;
+&lt;li&gt;Can use one or more decorators to wrap an object&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;decorator adds its own behavior either before and/or after delegating to the object it decorates to do the rest of the job&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators as we like&lt;/li&gt;
+&lt;li&gt;The Decorator Pattern provides an alternative alternative to sub classing for extending behavior.&lt;/li&gt;
+&lt;li&gt;The Decorator Pattern involves a set of decorator classes that are used to wrap concrete components&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;For Note:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;If a lot of small classes are created as a decorators for objects it would become more complex for a one to read or implement the other part of the code (introducing decorators can increase the complexity of the code)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;References:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.journaldev.com/1540/decorator-design-pattern-in-java-example&quot;&gt;Decorator Design Pattern in Java Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Book: Head First Design Patterns&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Design Patterns — Zero to Hero — Abstract Factory Pattern]]></title><description><![CDATA[The Abstract Factory is called a factory of factories. In the previous article, we have seen the Simple Factory and Factory Method patterns…]]></description><link>https://parathantl.github.io/design-patterns-zero-to-hero-abstract-factory-pattern/</link><guid isPermaLink="false">https://parathantl.github.io/design-patterns-zero-to-hero-abstract-factory-pattern/</guid><pubDate>Wed, 01 Jul 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;The Abstract Factory is called a factory of factories. In the previous article, we have seen the Simple Factory and Factory Method patterns. This patter too comes under the Creational Pattern category. This provides one of the best ways to create an object.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Abstract Factory &lt;strong&gt;relies on object composition&lt;/strong&gt;. Object creation is implemented in methods exposed in the Factory interface.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intent of the Abstract Factory Pattern is to create families of related objects without having to depend on their concrete class.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Let’s take an example of a scenario to implement this pattern in real-word.&lt;/h2&gt;
+&lt;p&gt;I want to implement a system for the Cloth showroom where Men and Women wares sold. To get particular people wares we have come up with Abstract Factory Pattern where it uses interface/abstract classes to hide the concrete classes and wrap up all those into an Abstract Factory class.&lt;/p&gt;
+&lt;p&gt;While execution this Abstract Factory class chooses which sub-class Factory class has to be executed and gives the output.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c9c8414f07c30325131f3dafd887b341/898f6/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlElEQVQoz11Si3KCMBDk/z/Oaa0K1EjCQx5JeATCSw12JbU63RmYcLd3u3fBuT0xDEPbtnVdK6X6vl+WpdM6iqIgCBijOBuzgDZf5nEcbYmDxxhzvV6lkIfDfvOx2e13qGmaJs8Lz/O+v30hZc65KKs0y8mJnIIAGlprB2Wox7vrurIsheDQl1JCvyxlksRZlkGqblTbacSLItcrpmly/mxDH6QkSfphgG3khid6rcdhmOfZrHhIrZIv26ptKaVwDmNQANUy0CuKI9/3Xc9ljMHRo/7fzEIIQsjpRMIwpIyO04QgUnCByJEcEQSKorjf769ii8uKbgXGxvxYGw76DZbzUr4+Yd4Abyxkn9st7gm9rLvfgW925NfMuNTlLWogGIYYkJ3Tc93U7zVmZduIM88XTAWTUMBidd/bq8InthDQAEPaWwUNb5yrugITjRwpS0oD/Biox1XBcJqmruuiBtSqqjjnhBztb4d2nufudl/YHOodzos4jkGFGtJKNWEU5nkuOFeqRRarRlaIR1ZIYclQQusfw02k2DSWvXsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/c9c8414f07c30325131f3dafd887b341/f058b/1.png&quot;
+        srcset=&quot;/static/c9c8414f07c30325131f3dafd887b341/c26ae/1.png 158w,
+/static/c9c8414f07c30325131f3dafd887b341/6bdcf/1.png 315w,
+/static/c9c8414f07c30325131f3dafd887b341/f058b/1.png 630w,
+/static/c9c8414f07c30325131f3dafd887b341/898f6/1.png 798w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MaterialType Interface&lt;/strong&gt;: Through this interface, all the type of cloth class will be implemented. This can be an interface or an abstract class. If you define abstract you declare and define variables for the sub-classes who extend.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public interface MaterialType {  
+   void getName();  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;LongSleeveTop&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class LongSleeveTop implements MaterialType {  
+   @Override  
+   public void getName() {  
+      System.out.println(&amp;quot;Long Sleeve Top for Woman&amp;quot;);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Scarf class&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class Scarf implements MaterialType {  
+   @Override  
+   public void getName() {  
+      System.out.println(&amp;quot;Scarf for Woman&amp;quot;);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;MenShirt Class&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class MenShirt implements MaterialType {  
+   @Override  
+   public void getName() {  
+      System.out.println(&amp;quot;Shirt for Men&amp;quot;);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;AbstractFactory:&lt;/strong&gt; Acts as an Abstract Factory to choose which sub-class factory to execute during the run-time&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public abstract class AbstractFactory {  
+   abstract Shape getMaterialType(String mateType) ;  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;MenWearFactory:&lt;/strong&gt; Chooses which concrete classes of MaterialType interface to be executed at run-time for men related material types.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class MenWearFactory extends AbstractFactory {@Override  
+   public Shape getMaterialType(String mateType){      
+      if(mateType.equalsIgnoreCase(&amp;quot;MenShirt&amp;quot;)){  
+         return new MenShirt();           
+      }else if(mateType.equalsIgnoreCase(&amp;quot;MenTrouser&amp;quot;)){  
+         return new MenTrouser();  
+      }	   
+      return null;  
+   }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;WomenWearFactory:&lt;/strong&gt; Selects which concrete class to be executed for Women related MaterialType classes.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class WomenWearFactory extends AbstractFactory {
+	@Override  
+	public Shape getMaterialType(String mateType){      
+		if(mateType.equalsIgnoreCase(&amp;quot;Scarf&amp;quot;)){  
+			return new Scarf();           
+		}else if(mateType.equalsIgnoreCase(&amp;quot;LongSleeveTop&amp;quot;)){  
+			return new LongSleeveTop();  
+		}	   
+		return null;  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;FactoryProducer:&lt;/strong&gt; Selects which Factory to be executed according to the parameter passed from the Client code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class FactoryProducer { 
+	public static AbstractFactory getFactory(boolean men){     
+		if(men){  
+			return new MenWearFactory();           
+		}else{  
+			return new WomenWearFactory();  
+		}  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Client class: (Main Program)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class Client { 
+	public static void main(String[] args) { 
+		//get MenWear factory  
+		AbstractFactory menFactory = FactoryProducer.getFactory(false); 
+		
+		//get an object of MaterialType Men Shirt  
+		MaterialType cl1 = menFactory.getMaterialType(&amp;quot;MenShirt&amp;quot;); 
+
+		//call getName method of MaterialType MenShirt  
+		cl1.getName(); 
+		
+		//get an object of MaterialType Trousers  
+		MaterialType cl2 = menFactory.getMaterialType(&amp;quot;Trousers&amp;quot;); 
+
+		//call getName method of MaterialType Trousers  
+		cl2.getName(); 
+		
+		//get WomenWearFactory  
+		AbstractFactory womenFactory = FactoryProducer.getFactory(true); 
+		
+		//get an object of Shape Rectangle  
+		MaterialType cl3= womenFactory.getMaterialType(&amp;quot;Scarf&amp;quot;); 
+
+		//call getName method of MaterialType Scarf  
+		cl3.getName(); 
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By implementing the abstract factory we &lt;strong&gt;reduce the coupling between classes by using abstract/interfaces and extending/implementing those base classes by concrete classes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The concrete classes here are MenShirt, Scarf, LongSleeveTop, and Trouser. So, what we have done is creating interfaces and abstractions to hide all these implemented classes and just let the program to choose which class to be executed at the run-time.&lt;/p&gt;
+&lt;p&gt;I hope you enjoyed this.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Design Patterns — Zero to Hero — Factory Pattern (Simple Factory and Factory Method)]]></title><description><![CDATA[In the last article, we have seen about Singleton Factory which belongs to Creational Patterns (Creational Patterns are mainly focused on…]]></description><link>https://parathantl.github.io/design-patterns-zero-to-hero-factory-pattern-simple-factory-and-factory-method/</link><guid isPermaLink="false">https://parathantl.github.io/design-patterns-zero-to-hero-factory-pattern-simple-factory-and-factory-method/</guid><pubDate>Sun, 28 Jun 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;In the last article, we have seen about &lt;strong&gt;Singleton Factory&lt;/strong&gt; which belongs to Creational Patterns (Creational Patterns are mainly focused on creating Objects). Today, we are going to have a look at another type of Creational Pattern called &lt;strong&gt;Factory Pattern&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The word itself illustrates its functionalities.&lt;/p&gt;
+&lt;h2&gt;What is Factory?&lt;/h2&gt;
+&lt;p&gt;A place where things are created/produced. In factories things are created/produces according to the requirements/orders. Similarly, in the Software development Factory Pattern is implemented to create and execute objects according to the parameters passed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Factory Method Pattern encapsulates to object creation by letting sub-classes to decide what objects to create at run-time (while execution).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the Factory Pattern, there are 3 different variations are found. They are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Simple Factory:&lt;/strong&gt; allows interfaces for &lt;strong&gt;creating objects without exposing the object creation logic to the client&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Factory Method:&lt;/strong&gt; allows interfaces for creating objects, but &lt;strong&gt;allow sub-classes&lt;/strong&gt; to determine which class to instantiate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstract Factory:&lt;/strong&gt; an abstract factory provides a way to create families of objects for a group of factories without specifying its concrete class. (We will explore this in our next article.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, today we are going to look into Simple Factory and Factory Patterns.&lt;/p&gt;
+&lt;p&gt;To do a class object creation we use the keyword called &lt;strong&gt;new&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Class() obj = new Class();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(&lt;strong&gt;In some cases if you created a static method inside a class and you want to call that method you won’t need to use a new keyword and then to call a static method.&lt;/strong&gt;)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before moving into the explanation part we need to have a clear understanding of &lt;strong&gt;concrete class&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A class that has an implementation for all of its methods is called &lt;strong&gt;Concrete class&lt;/strong&gt;. They cannot have any unimplemented methods. The concrete class can extend the Abstract class or an interface as long as its implements all the methods of those too. Simply, we can say that all classes which are not Abstract class are considered as Concrete classes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Actually, according to Head First Design Patterns, Simple Factory is not considered as a Design Pattern. Let’s get started understanding the Factory Pattern varieties.&lt;/p&gt;
+&lt;h1&gt;Simple Factory Pattern&lt;/h1&gt;
+&lt;p&gt;The Simple Factory Pattern describes a way of instantiating class using a method with a large conditional that based on &lt;strong&gt;method parameters&lt;/strong&gt; to choose which product class to instantiate and then return.&lt;/p&gt;
+&lt;p&gt;Let’s dive into the coding example where the Simple Factory Pattern comes into play.&lt;/p&gt;
+&lt;p&gt;Imagine a scenario, where we have different brands of smartphones. You need to take the specification details of the respective brands where the brand name is passed as a parameter through the client code.&lt;/p&gt;
+&lt;h2&gt;See the following interface and the class implementations.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IMobile&lt;/strong&gt; interface&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public interface **IMobile** {  
+   void sendMessage();  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Samsung class implementation&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class Samsung implements IMobile{ 
+@Override  
+public void sendMessage() {  
+      System.out.println(&amp;quot;Samsung Selected&amp;quot;);  
+}}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;iPhone Class implementation&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class iPhone implements IMobile {
+   @Override  
+   public void sendMessage() {  
+      System.out.println(&amp;quot;iPhone Selected &amp;quot;);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The following is the main class which instantiates the classes using objects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I have only 2 classes the following implementation would be fine for now.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class App {
+	public static void main(String[] args) {
+		IMobile mob1 = new Samsung();      
+		mob1.sendMessage(); IMobile mob2 = new iPhone();      
+		mob2.sendMessage(); 
+        }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What if we have a lot of brands for smartphones. We need to change the client code whenever new company brands come to the market.&lt;/p&gt;
+&lt;p&gt;Without affecting the client code section, we are going to create a factory class called MobileFactory. This class will have a &lt;strong&gt;getType&lt;/strong&gt; method which returns &lt;strong&gt;IMobile&lt;/strong&gt; type by getting an argument and checks through conditional statements and returns the respective concrete class.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class MobileFactory {
+
+	IMobile mobile = null; 
+
+	//getType method will return IMobileobject creation according to the parameter passsed
+
+	IMobile getType (String str) { 
+		if(str.equals(&amp;quot;Samsung&amp;quot;)) {  
+			mobile = new Samsung();  
+		}else if(str.equals(&amp;quot;iPhone&amp;quot;)) {  
+			mobile = new iPhone();
+		}  
+		return mobile;  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Main method implementation would be now as like this&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class App {  
+	public static void main(String[] args) {
+		MobileFactory mobfactory = new MobileFactory(); 
+		mobfactory.getType(&amp;quot;Samsung&amp;quot;).sendMessage(); 
+	}  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From, now onward We don’t have to change anything in the main method (That is &lt;strong&gt;Client code&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;The Simple Factory Pattern is like a basement for the Factory Method Pattern and Abstract Factory Pattern.&lt;/p&gt;
+&lt;p&gt;In the Simple Factory, we are initiating all concrete classes in the MobileFactory by specifying which mobile name as a parameter and through conditional statements.&lt;/p&gt;
+&lt;p&gt;But, the MobileFactory has to handle and instantiate all the concrete classes implemented in the program. This could get harder when mobile brands start to produce a different smartphone with several names.&lt;/p&gt;
+&lt;p&gt;In this case, all the smartphone classes need to be placed in the MobileFactory class under conditional statements. To ease, this difficulty we can create a new Factory for specific smartphone producing companies.&lt;/p&gt;
+&lt;h1&gt;Factory Method Pattern&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Factory&lt;/strong&gt; &lt;strong&gt;Method&lt;/strong&gt; &lt;strong&gt;Pattern&lt;/strong&gt; says that just &lt;strong&gt;define&lt;/strong&gt; &lt;strong&gt;an&lt;/strong&gt; &lt;strong&gt;interface&lt;/strong&gt; or &lt;strong&gt;an&lt;/strong&gt; &lt;strong&gt;abstract&lt;/strong&gt; class and let the subclasses decide which class to instantiate.&lt;/p&gt;
+&lt;p&gt;The Factory Method Pattern is also known as &lt;strong&gt;Virtual Constructor.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let’s imagine a scenario wherein a showroom has different brands of products to showcase.&lt;/p&gt;
+&lt;p&gt;We will be implementing this using the Factory Pattern.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an abstract/interface for Brands&lt;/li&gt;
+&lt;li&gt;Brands will be implemented or extended by the concrete classes. Eg: Canon, Sony&lt;/li&gt;
+&lt;li&gt;Another interface for Equipment that will be extended/implemented by the concrete classes. Eg: CanonDSLR, CanonScanner, SonyTV, and SonyDSLR&lt;/li&gt;
+&lt;li&gt;getDetails() method in the subclasses of Brands will decide which Equipment class will be selected according to the parameter value of Equipment (Eg: Camera, TV, Scanner) passed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Look at the following UML class diagram explaining this much efficiently.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46913daee22bc6d827ac1b2247dc9f25/d4c13/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.202531645569614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVQoz12R0Y6FIAxE/f9v9OE+raCIigpaFfYIua7ZiWlomWHaWu0i13Wd50nc933OOI7jKQIRWdd1mqYQgmR+ua0ecUppHMe6rodhkG8RxBi9D8Z0Simu0P8XY0Virf18Pm3b0kJRFh4ptnCInF/iXWJKJNu2FUPJwJAz3fKWUpoD7GVZ8DfG+BBuMZaUmkbxee/73rZaI6CICZp5dmwheE9KkWxdfRm+kuNEw3tQoDK21nrJoE+ic3PfG5unhSByF3mOt+6Z441U+owvMPE0uQb8NAiYi8jY1vaInXN/C3vWm3eX9ySCIY10XccusYJWVsOZRqr3f37WWwA1ZDBXWdibRvwFc4QI+fZvG6kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/46913daee22bc6d827ac1b2247dc9f25/f058b/1.png&quot;
+        srcset=&quot;/static/46913daee22bc6d827ac1b2247dc9f25/c26ae/1.png 158w,
+/static/46913daee22bc6d827ac1b2247dc9f25/6bdcf/1.png 315w,
+/static/46913daee22bc6d827ac1b2247dc9f25/f058b/1.png 630w,
+/static/46913daee22bc6d827ac1b2247dc9f25/d4c13/1.png 825w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Brands abstract class&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public abstract Brands {
+
+	public Equipment orderEquipment(String equipment) {  
+	              Equipment equip;   
+	              equip = getDetail(equipment); 
+	              return equip; 
+	} 
+	protected abstract Equipment getDetail(String brandName);
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Canon class which extends Brands class&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public Canon extends Brands {
+	protected Equipment getDetail(String equipment){
+	
+		Equipment equip = null;
+		
+		if(equipment.equals(&amp;quot;DSLR&amp;quot;)){  
+			equip = new CanonDSLR();  
+		}else if(equipment.equals(&amp;quot;Scanner&amp;quot;)){  
+			equip = new CannonScanner();  
+		}else if(equipment.equals(&amp;quot;Printer&amp;quot;)){   
+			equip = new CanonPrinter()  
+		} 
+		return equip;
+	}  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Similarly, we can create for the Sony class too.&lt;/p&gt;
+&lt;h2&gt;Equipment interface (This can be implemented as an abstract class if you want to have any variables or method implementations)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public interface Equipment { 
+	void printBrand();
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;CanonDSLR class&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class CanonDSLR implements Equipment{
+    @Override  
+    public void printBrand() {  
+          System.out.println(&amp;quot;Canon DSLR Selected&amp;quot;);  
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Similarly, we can create for other classes like CanonPrinter and SonyTV.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now let’s have a look at how to call these program from the &lt;strong&gt;client code&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class App { 
+	public static void main(String[] args) { 
+		Brands canon1 = new Canon(); 
+		Equipment equip1 = canon1.getDetail(&amp;quot;DSLR&amp;quot;); equip1.printBrand(); 
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Usage of the Factory Method Pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When a class doesn’t know which sub-classes will be required to create&lt;/li&gt;
+&lt;li&gt;When a class wants its subclasses to specify its objects to be created&lt;/li&gt;
+&lt;li&gt;When the parent classes choose the creation of objects to its sub-classes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember: Most of the examples found and Tutorials are discussing The Simple Pattern and Factory Method Patters as mostly the same pattern. But it’s not true. I have invested my time in finding the differences for more than 4 days. So, Please shoot any questions if you can’t differentiate the differences.&lt;/p&gt;
+&lt;p&gt;If you have any doubts or confusions just leave a comment below or connect with me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Design Patterns — Zero to Hero — Singleton Pattern]]></title><description><![CDATA[In our day-to-day coding occurrences, we may have come across some implementations where a class needs to be instantiated only once and no…]]></description><link>https://parathantl.github.io/design-patterns-zero-to-hero-singleton-pattern/</link><guid isPermaLink="false">https://parathantl.github.io/design-patterns-zero-to-hero-singleton-pattern/</guid><pubDate>Wed, 17 Jun 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;In our day-to-day coding occurrences, we may have come across some implementations where a class needs to be instantiated only once and no need to instantiate again and again.&lt;/p&gt;
+&lt;h2&gt;Some example instances are as follows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Objects used for logging&lt;/li&gt;
+&lt;li&gt;Objects that act as device drivers to devices like printers and graphic cards&lt;/li&gt;
+&lt;li&gt;Objects containing registry settings and caches related details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For these kinds of instances if we allowed instantiating objects many times we may have to run out of resources or may get into some troubles like incorrect program behavior. To resolve these issues we need to instantiate the object only one time and when the object instantiated more than one time, it needs to return the object instance which created at first.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The Singleton Pattern&lt;/strong&gt; ensures a class has only one instance, and provide a global point of access to it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Before getting into what is Singleton, We have to know how an object instance of a class can be created?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When you are creating a new object of a class that class needs to be public (Public is access modifier; anywhere in the program the class’s object can be created). If the class is not public, only classes in the same package can instantiate it. Even though, those same package classes can create many objects for that class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Singleton, We need to implement the code to instantiate a class only once and thereafter, no more instantiation of the class&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Therefore, we need to make the constructor of the class as &lt;strong&gt;Private&lt;/strong&gt; (Private can only be accessed within the declared class itself.)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the constructor is &lt;strong&gt;private&lt;/strong&gt; no other classes can instantiate the class. But we can make static methods in that class and try to create a new instance of the class&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public Singleton{
+//Private Constructor  
+private Singleton() {}
+
+// getInstance method will return Singleton class object  
+
+public static Singleton getInstance() {
+//Implementation for creating new Singleton class objects
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Making static methods will enable us to do lazy initialization. Declaring the method as static will enable us this feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, when we are going to access a method of a class without initializing a class object we need to make that particular method as static. So, that method can be accessed by the following structure&lt;/p&gt;
+&lt;p&gt;Singleton.getInstance();&lt;/p&gt;
+&lt;p&gt;Now, what we have to do is creating a new instance of the class inside the getInstance() method.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public Singleton{
+	// This static variable will hold the one instance of the      class Singleton
+
+	private static Singleton uniqueInstance;
+	//Private Constructor
+
+	private Singleton(){}
+	// getInstance method will return Singleton class object
+	
+	public static Singleton getInstance() { 
+		//Implementation for creating new Singleton class objects 
+		if(uniqueInstance == null){  
+			uniqueInstance = new Singleton();  
+			System.out.println(&amp;quot;New Singleton Object Instantiated&amp;quot;)  
+		}  
+	        return uniqueInstance;
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This uniqueInstance variable will be assigned to a new class object instance of Singleton class if it is not created already. If it already created it will give the one that already exists. So, this is what Singleton’s implementation is. You will just create only one instance of the object.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But you may think that is that implementation would work in a Multi-thread environment too?&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before know about Multi-Thread execution, You should have an understanding of handling/creating Threads in Java. Then only you could be able to understand this without any hustle. I am attaching reference YouTube videos so that you can refer it too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It won’t because every thread will create its own Singleton’s object instance as they are executed separately. For example, when you implemented 2 Threads and run the above code you will get the following output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New Singleton Object Instantiated&lt;br&gt;
+New Singleton Object Instantiated&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Following are some of the steps to improve Multi-Threading scenario&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Do nothing if the performance is not critical in the program&lt;/strong&gt;: If you the implemented way is not overhead the program you created, then leave it as it is. No issues. Synchronizing a method would be straightforward and effective. But, synchronizing will reduce the performance of the code. Keep all these in mind and implement your code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public Singleton {
+// This static variable will hold the one instance of the      class Singleton
+
+private static Singleton uniqueInstance;
+//Private Constructor
+
+private Singleton(){ }
+// getInstance method is set to synchronized, therfore the Threads will wait till the getInstance method is unlocked by other thread 
+
+public static synchronized Singleton getInstance() {
+	//Implementation for creating new Singleton class objects 
+	if(uniqueInstance == null){  
+		uniqueInstance = new Singleton();  
+		System.out.println(&amp;quot;New Singleton Object Instantiated&amp;quot;); 
+	} 
+           return uniqueInstance; 
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create instance while declaring the class object variable&lt;/strong&gt;: If your application always creates and uses an instance of the class of the object instantiation is not an overhead for your application; just create the instance while declaring the variable instance of the class. Something as like follows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public class Singleton {
+//This one is a Thread-safe when instantiating class object while assigning it to the static initializer
+
+private static Singleton uniqueInstance = new Singleton();
+
+private Singleton(){}
+
+private static Singleton getInstance(){  
+          return uniqueInstance  
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above method will not be a problem when running in a multiple thread environment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;use of “double-checked locking” to reduce the use of synchronization:&lt;/strong&gt; With this method, the code will check to see if an instance is created or not. If it is created then it will synchronize. By using this way, synchronization will happen only once and that is only for the first time.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public Singleton 
+{ 
+// Volatile keyword ensures multiple threads handle the variable correctly when it initilized
+
+private volatile static Singleton uniqueInstance; 
+//Private Constructor
+
+private Singleton(){
+
+} 
+
+public static Singleton getInstance(){  
+        if(uniqueInstance == null) {
+        synchronized (Singleton.class){ 
+	        if (uniqueInstance == null){  
+		        uniqueInstance = new Singleton();  
+			System.out.println(&amp;quot;New Singleton Object Instantiated&amp;quot;)  
+		}
+        }
+}  
+      return uniqueInstance;
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I hope you were able to understand the explanation. If any doubts leave a comment below. Let’s meet with another Design Pattern soon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I hope you were able to understand the explanation. If any doubts leave a comment below. Let’s meet with another Design Pattern soon.&lt;/p&gt;
+&lt;h2&gt;Reference:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Head First Design Pattern — A Brain-Friendly Guide&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=RH7G-N2pa8M&quot;&gt;Multithreading Synchronized Keyword&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4CJ2sjka8Uw&quot;&gt;Synchronization in Java Multithreading — Complete Theory with Examples in Hindi and English&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Threads in Programming]]></title><description><![CDATA[Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some…]]></description><link>https://parathantl.github.io/threads-in-programming/</link><guid isPermaLink="false">https://parathantl.github.io/threads-in-programming/</guid><pubDate>Mon, 15 Jun 2020 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some occurrences where changes occur concurrently like meter measurements or the moving objects in the display. These won’t happen at the same time. Each action is executed under a Thread. But those thread execution changes within &lt;strong&gt;milliseconds&lt;/strong&gt;, to our naked eye we can’t observer what’s happening&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;An application can have multiple processes, the process can have multiple threads.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -228,7 +855,68 @@ df = pd.read_csv(“file_name.csv”)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;When I/O request interrupted the execution it will move to Blocked state and when the request is done will move to Ready state.&lt;/p&gt;
 &lt;p&gt;Methods in the arrow indication are used in Java to change the state of a thread.&lt;/p&gt;
 &lt;h2&gt;In the next article, we will see the coding implementation of Thread in Java&lt;/h2&gt;
-&lt;p&gt;Follow me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Intro to YAML — a human-friendly data serialization standard]]></title><description><![CDATA[Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no…]]></description><link>https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</link><guid isPermaLink="false">https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</guid><pubDate>Mon, 08 Jun 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no. No worries lets take a look at that what it is?&lt;/p&gt;
+&lt;p&gt;Follow me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Software Design Patterns — Zero to Hero]]></title><description><![CDATA[I have been coding from 2017, related to web-development and automating boring stuff with Python. While coming across some cool stuff in…]]></description><link>https://parathantl.github.io/software-design-patterns-zero-to-hero/</link><guid isPermaLink="false">https://parathantl.github.io/software-design-patterns-zero-to-hero/</guid><pubDate>Sun, 14 Jun 2020 13:00:37 GMT</pubDate><content:encoded>&lt;p&gt;I have been coding from 2017, related to web-development and automating boring stuff with Python. While coming across some cool stuff in Software Engineering I got to know about “&lt;strong&gt;Design Patterns&lt;/strong&gt;”.&lt;/p&gt;
+&lt;p&gt;I saved that in my learning list last year. But I was not able to catch those patterns principle and how they are working, finally, in the academics syllabus, a module in Object-Oriented Programming contained Design Pattern. So, I give a shot and tried to learn those things.&lt;/p&gt;
+&lt;p&gt;These are some of the  coolest things I learned in my learning period. So, I wanted to share it with you. I made this as a series of articles to explain one pattern in a single post.&lt;/p&gt;
+&lt;p&gt;I hope you will like the series. If you have any confusion or if I have written anything wrong please leave a comment. This will help both of us.&lt;/p&gt;
+&lt;h2&gt;What are Design Patterns?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In software engineering, a software design pattern is a &lt;strong&gt;general, reusable solution to a commonly occurring problem within a given context in software design&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It is not a finished design that can be transformed directly into source or machine code. Rather, it is &lt;strong&gt;a description or template for how to solve a problem that can be used in many different situations&lt;/strong&gt;. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&lt;/p&gt;
+&lt;p&gt;— Wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Yeah, I hope you had a better explanation from the above description.&lt;/p&gt;
+&lt;p&gt;Design Patterns are nothing but a general, reusable solution to commonly occurring problems in software design. Commonly occurring problems would be said something like You are designing an application, and you may have stuck at someplace to choose in which way to connect the classes and objects you have created. At this juncture, there are proved and tested and succeeded patterns called “Design Patterns” which may help you to develop the system design. Each pattern in this Design Pattern handles different cases and gives you a solution to solve.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Patterns originated as an architectural concept by Christopher Alexander as early as 1966. In 1987, Kent Beck and Ward Cunningham began experimenting with the idea of applying patterns to programming.&lt;/p&gt;
+&lt;p&gt;Design patterns gained popularity in computer science after the book &lt;strong&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/strong&gt; was published in 1994 by the so-called “&lt;strong&gt;Gang of Four&lt;/strong&gt;” (Gamma et al.), which is frequently abbreviated as “&lt;strong&gt;GoF&lt;/strong&gt;”&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;These were taken from Wikipedia to get a big picture behind what is Design Pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, why do we have to waste time?&lt;/p&gt;
+&lt;p&gt;Let’s dive into Design Patterns one-by-one and take coding experience by solving.&lt;/p&gt;
+&lt;h2&gt;Design Patterns were grouped into 3 types according to their functionality by GoF&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Creational&lt;/strong&gt;: Involve object initialization and provide a way to decouple the client from the objects it needs to instantiate.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structural&lt;/strong&gt;: Lets you compose classes or objects into larger structures.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Behavioral&lt;/strong&gt;: Concerned with how classes and objects interact or distribute responsibility.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Followings are the Design Patterns covered under these 3 types&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1.Creational&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract Factory&lt;/li&gt;
+&lt;li&gt;Builder&lt;/li&gt;
+&lt;li&gt;Factory Method&lt;/li&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;li&gt;Singleton&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.&lt;strong&gt;Behavioral&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Strategy&lt;/li&gt;
+&lt;li&gt;Observer&lt;/li&gt;
+&lt;li&gt;Command&lt;/li&gt;
+&lt;li&gt;Interpreter&lt;/li&gt;
+&lt;li&gt;Iterator&lt;/li&gt;
+&lt;li&gt;Mediator&lt;/li&gt;
+&lt;li&gt;Memento&lt;/li&gt;
+&lt;li&gt;Chain of Responsibility&lt;/li&gt;
+&lt;li&gt;State&lt;/li&gt;
+&lt;li&gt;Template Method&lt;/li&gt;
+&lt;li&gt;Visitor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.&lt;strong&gt;Structural&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adapter&lt;/li&gt;
+&lt;li&gt;Bridge&lt;/li&gt;
+&lt;li&gt;Composite&lt;/li&gt;
+&lt;li&gt;Decorator&lt;/li&gt;
+&lt;li&gt;Facade&lt;/li&gt;
+&lt;li&gt;Flyweight&lt;/li&gt;
+&lt;li&gt;Proxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the next article, We can start with the Singleton Design Pattern.&lt;/p&gt;
+&lt;h2&gt;Stay tuned&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[Intro to YAML — a human-friendly data serialization standard]]></title><description><![CDATA[Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no…]]></description><link>https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</link><guid isPermaLink="false">https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</guid><pubDate>Mon, 08 Jun 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no. No worries lets take a look at that what it is?&lt;/p&gt;
 &lt;h1&gt;What is YAML?&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;YAML Ain’t Markup Language (YAML)&lt;/strong&gt;&lt;/p&gt;
