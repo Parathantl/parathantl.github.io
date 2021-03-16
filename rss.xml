@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Parathan Thiyagalingam]]></title><description><![CDATA[A personal blog for documenting what I learned]]></description><link>https://parathantl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 21:15:35 GMT</lastBuildDate><item><title><![CDATA[ACID Properties in RDBMS]]></title><description><![CDATA[Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Parathan's blog]]></title><description><![CDATA[A personal blog for documenting what I learned]]></description><link>https://parathantl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 18:42:29 GMT</lastBuildDate><item><title><![CDATA[ACID Properties in RDBMS]]></title><description><![CDATA[Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
 Before or after…]]></description><link>https://parathantl.github.io/acid-properties-in-rdbms/</link><guid isPermaLink="false">https://parathantl.github.io/acid-properties-in-rdbms/</guid><pubDate>Sun, 14 Mar 2021 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Relational Database Management System is working under main properties. Those properties abbreviated term is called as ACID.
 Before or after a transactions happen in a database, these 4 properties will be followed to maintain the integrity of a database management system.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: A transaction must be atomic. Transaction should happen or not. It &lt;strong&gt;can not be at a middle state&lt;/strong&gt;. If a transaction became failure while happening no changes would have happen to database. It will be at the previous state where that transaction happened before.
@@ -41,4 +41,1887 @@ parathan19@gmail.com&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><tit
 &lt;p&gt;I am going to download a python2 supported package using pip for python2
 In my case, wikitools&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python2 -m pip install wikitools&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;That’s it. We have installed the Packages for Python2&lt;/h5&gt;</content:encoded></item></channel></rss>
+&lt;h5&gt;That’s it. We have installed the Packages for Python2&lt;/h5&gt;</content:encoded></item><item><title><![CDATA[The difference between Module, Package and Library in Python]]></title><description><![CDATA[I started learning Python a year back and implemented some simple scripts to automate some manual tasks. E.g: Read CSV files and analyzing…]]></description><link>https://parathantl.github.io/difference-between-module-package-library-in-python/</link><guid isPermaLink="false">https://parathantl.github.io/difference-between-module-package-library-in-python/</guid><pubDate>Thu, 10 Dec 2020 13:00:37 GMT</pubDate><content:encoded>&lt;p&gt;I started learning Python a year back and implemented some simple scripts to automate some manual tasks.&lt;/p&gt;
+&lt;p&gt;E.g:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read CSV files and analyzing&lt;/li&gt;
+&lt;li&gt;Download YouTube videos by giving the link&lt;/li&gt;
+&lt;li&gt;Updating Webpages through Rest API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, while implementing all theses I have gone through the keywords like Module, Package and Library. I was bit confused why there are different names used and browsed over the Internet to clear my doubt.&lt;/p&gt;
+&lt;p&gt;At then end, I cleared and able to manage with some of my colleagues and juniors regarding what these words really meant. Lets get into this brief post to know what they mean.&lt;/p&gt;
+&lt;h2&gt;Module&lt;/h2&gt;
+&lt;p&gt;Module is a simple Python (executable file) file which contain collections of functions and global variables inside it. These files has the extension as &lt;strong&gt;.py&lt;/strong&gt; [ Since, its just a Python File ]&lt;/p&gt;
+&lt;p&gt;E.g:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;def addNumbers(num1, num2):   
+    return num1+num2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Just save this as &lt;strong&gt;demo.py&lt;/strong&gt; and create a new Python file as &lt;strong&gt;test.py&lt;/strong&gt; and inside it write the following lines of code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import demox = demo.addNumbers(5,6) 
+print(x)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You will see the output as &lt;strong&gt;11&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Package&lt;/h2&gt;
+&lt;p&gt;The collections of modules organized together and kept into a directory. That directory is known as Package. There can be several number of modules can be found. Inside this directory there will be &lt;strong&gt;&lt;strong&gt;init&lt;/strong&gt;.py&lt;/strong&gt; file. This file is the one which will always be recognized and run by the compiler.&lt;/p&gt;
+&lt;h3&gt;Before getting more into this lets see what is &lt;strong&gt;init&lt;/strong&gt; in Python&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;init&lt;/strong&gt; will be considered as a constructor when we are implementing Object Oriented Programming in Python.&lt;/p&gt;
+&lt;p&gt;What is the functionality of constructor in Object Oriented Programming?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When initializing an object from anywhere in the code the class variables can be initialized. That means initiating the state of objects.&lt;/li&gt;
+&lt;li&gt;Constructors are the one which executed at the very beginning when an object is instantiated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#a Sample class with init method
+
+class Device:     
+
+  # init method or constructor      
+  def __init__(self, name):     
+      self.name = name     
+      
+  # Sample Method      
+  def say_hi(self):     
+      print(&amp;#39;Hello, my device is&amp;#39;, self.name)     
+      
+p = Device(&amp;#39;Personal Computer&amp;#39;)     
+p.say_hi()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So, you will get the following as an output&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Hello, my device is Personal Computer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So, I hope you may have got some clear understanding on why &lt;strong&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/strong&gt; used in Python. Similarly, when creating a package &lt;strong&gt;&lt;strong&gt;init&lt;/strong&gt;.py&lt;/strong&gt; will be recognized as the constructor and will be executed when the Package is called for execution at run-time. The package may also can contain sub-packages.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Student(Package)  
+| __init__.py (Constructor)  
+| details.py (Module)  
+| marks.py (Module)  
+| collegeDetails.py (Module)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Library&lt;/h2&gt;
+&lt;p&gt;Library is having a collection of related already written functionalities and code segments which you don’t have to re-write by your own and allows you to perform many tasks by just importing the Library. Simply say, Library can also be considered as a collection of Packages.&lt;/p&gt;
+&lt;p&gt;Some examples for Library are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pandas — CSV manipulations can be done&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PyPDF2 — PDF file handling Library for Python&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import pandas as pd   
+df = pd.read_csv(“file_name.csv”)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;According to the above code, We are just importing Pandas as pd to use pd keyword in the below code lines to access the methods. read_csv method in Pandas library will read the CSV file into a Data Frame.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s it. I hope you have you get a better picture right now from the above explanations.&lt;/p&gt;
+&lt;p&gt;Happy Coding….&lt;/p&gt;
+&lt;p&gt;Keep supporting my blog as much as you can. This is my sole intention is to share my learning with Dev community and to make use of this learning in my future developments&lt;/p&gt;
+&lt;p&gt;Follow me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reference:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DdGVBZv46PI&amp;#x26;feature=emb_title&quot;&gt;Modules&lt;/a&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=V27FQ6UBTPY&amp;#x26;feature=emb_title&quot;&gt;Modules, Packages and Libraries in Python Explained&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Threads in Programming]]></title><description><![CDATA[Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some…]]></description><link>https://parathantl.github.io/threads-in-programming/</link><guid isPermaLink="false">https://parathantl.github.io/threads-in-programming/</guid><pubDate>Mon, 15 Jun 2020 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever wondered how big applications or software are working? Imagine while you are playing video games you may have seen some occurrences where changes occur concurrently like meter measurements or the moving objects in the display. These won’t happen at the same time. Each action is executed under a Thread. But those thread execution changes within &lt;strong&gt;milliseconds&lt;/strong&gt;, to our naked eye we can’t observer what’s happening&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An application can have multiple processes, the process can have multiple threads.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To know about Threads we need to know about Process.&lt;/p&gt;
+&lt;p&gt;Refer the following Wikipedia Definition for Thread and Process&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In computer science, a thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In particular, the threads of a process share its executable code and the values of its dynamically allocated variables and non-thread-local global variables at any given time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Process&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The process starts with a single thread [Primary Thread] and later can create more Thread from any of its Threads.&lt;/li&gt;
+&lt;li&gt;A process has at least one thread&lt;/li&gt;
+&lt;li&gt;All Threads of a Process have to access its memory and System resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Threads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The smallest unit of execution to which processor allocates time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Threads consist of the following&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Program Counter: (contains the address of the next instruction to be executed)&lt;/li&gt;
+&lt;li&gt;a Stack&lt;/li&gt;
+&lt;li&gt;Set of registers&lt;/li&gt;
+&lt;li&gt;A unique id&lt;/li&gt;
+&lt;li&gt;However, a thread itself is not a program. It cannot run on its own but runs within a program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s have a look at a simple explanation of the following picture to understand Threads.&lt;/p&gt;
+&lt;p&gt;A web server is running on the internet. While running it will have a primary thread inside a process. The process’s main intention is to handle HTTP requests to the server.&lt;/p&gt;
+&lt;p&gt;When a new request comes it will create a new thread inside that process and send a response to the request.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 620px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/aa2ee44f9645347e1bda49804aed91a5/2a195/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVQoz2WS60sUURjG5y/qa0FUUJQQaRBCuktXKOpDG1aGlKRhye6atyiNaj8URYjdhNy13XEvammUd1pzUzd1V3cdZ2dn53Zmzpw5vTNJCT38Pgwzcx6e9zkvYxiYWuZYcv15eH45J1JKTVvYgA8YW5YFb7BJdGwa20DYNAlh1vKbxaLQ8Ozrjot97MSqJovfkz/y+Q2eL3CbPPyjIlz7eKyqOXqyJX7Cb3PqXqLyDvsqmmKI493yemb31WB0MkOppWiGAbYQgVBi0YKkebpGK+/Gq7wJtz/h8iVc3sT+uoFAaI7JrK9RStrezO65FoyMr4IRcbLCMWzavuB1vnOkrD5S0ThY7nD09uC+66GnoSSTzmYRUh70Jcvqw+xERpVLqYWlX8uruTynwaCWJWl6XeCL2xc/0zZ0utXmbPvw8eZYT/znVuyOt7MH6j7GpuzYoijKskT/yqJgggy8HQ3aNAmjqhq1cOe72cO3Is5hu1sYWdd1pCPLFuVFLV9QN4R/5AuKpOpMboOHtn09kzBGYjqrK1IqtcBxnCAUC0IRLgTC1zwaPdY0WO2NQVrA5Y1XNEZesPNbsf290ztrPrBO26Ks/WkbQ9uECiXN0223Xe207fYNuf1DB2+EAwNzTHopDbFbemd21fSHv62AkYYw0rGiId0wobCSgs51DB+6GT7SwJY7QO17a0NPgklGlFXYsFa45yv9saksUksLi+mVlcwmL8CGOF5G08vxC/dHPF2fLz20udw9CnbvPy0xTmqa4aTpRa4oI3iGxTR0g24TIdb/gH4Dn1tOmKucXTYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/aa2ee44f9645347e1bda49804aed91a5/2a195/1.png&quot;
+        srcset=&quot;/static/aa2ee44f9645347e1bda49804aed91a5/c26ae/1.png 158w,
+/static/aa2ee44f9645347e1bda49804aed91a5/6bdcf/1.png 315w,
+/static/aa2ee44f9645347e1bda49804aed91a5/2a195/1.png 620w&quot;
+        sizes=&quot;(max-width: 620px) 100vw, 620px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Threads VS Process&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Threads are easier to create than processes since they don’t require a separate address space.&lt;/li&gt;
+&lt;li&gt;Threads are considered lightweight because they use far fewer resources than processes.&lt;/li&gt;
+&lt;li&gt;Processes are typically independent, while threads exist as subsets of a process&lt;/li&gt;
+&lt;li&gt;Processes have separate address spaces, whereas threads share their address space&lt;/li&gt;
+&lt;li&gt;Context switching between threads in the same process is typically faster than context switching between processes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know about &lt;a href=&quot;https://en.wikipedia.org/wiki/Context_switch&quot;&gt;context-switching&lt;/a&gt; refer this link to get to know about it&lt;/p&gt;
+&lt;h2&gt;Thread Life-cycle diagram&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/79ca93bb61286e47f891eaee24c513fb/f6f78/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB30lEQVQoz21SaY+cMAzl//+qalt1K3XVmZ0DZplhuCEcIeSAJIChntn2Q6VakSU7seP3np3tX1uf3ixzK2XTVPNi/dt6OMHuAN4H+Dc4nuHnG4QRrBs42/+MTVNAu7apjNV/ewKedX3UrCuG6MABAM56JcSgDde6FDLuxT5MdmHyThqf9hkXRKlm0FQNcZIUea6eZoxxYIaupYcguDU1s0bDzK3dZ+XuHqPPh7GQ4t6xvGdRVd7aNqNtEsdRFDHGHmMXSrXmc7ytKPP97teFVKVStzhqSGmfVynv9xc3CHwvS5m1mFkAHGVtLsS2/YFiJ9sL7pPmVNb3ugniOEzTcZoaqd5zElb1oMeUc7ss8zw71Gim9WwnbYw1BomolPrmXV9P/mtwTyi9ZtmdsbcofT37X47nwZrO6N6gIFistTKWtg0piiiO3TgppCzlcE4zP8vDll7v4TxNsK2dVFwqJDnhfAbAnxxmbNrzVo2lVBdKcQqEIO3klYT3PYIKOua3lAjJjUFohUDyJb4Zx9FZNvAIeTm4L0cvINUjO89uQY5ZiQphOAHskuzrwf3ufYQdw+6wouabGkZke51gqYRADfSTRqTnlJY/XN/PC6Rw2VZpTdGxmvXw3EBcjUdxV/8GhlJpZhT7DKcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/79ca93bb61286e47f891eaee24c513fb/f058b/2.png&quot;
+        srcset=&quot;/static/79ca93bb61286e47f891eaee24c513fb/c26ae/2.png 158w,
+/static/79ca93bb61286e47f891eaee24c513fb/6bdcf/2.png 315w,
+/static/79ca93bb61286e47f891eaee24c513fb/f058b/2.png 630w,
+/static/79ca93bb61286e47f891eaee24c513fb/f6f78/2.png 932w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thread has the following state while its execute&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ready&lt;/li&gt;
+&lt;li&gt;Running&lt;/li&gt;
+&lt;li&gt;Sleeping&lt;/li&gt;
+&lt;li&gt;Waiting&lt;/li&gt;
+&lt;li&gt;Dead&lt;/li&gt;
+&lt;li&gt;Blocked&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When I/O request interrupted the execution it will move to Blocked state and when the request is done will move to Ready state.&lt;/p&gt;
+&lt;p&gt;Methods in the arrow indication are used in Java to change the state of a thread.&lt;/p&gt;
+&lt;h2&gt;In the next article, we will see the coding implementation of Thread in Java&lt;/h2&gt;
+&lt;p&gt;Follow me on &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Intro to YAML — a human-friendly data serialization standard]]></title><description><![CDATA[Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no…]]></description><link>https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</link><guid isPermaLink="false">https://parathantl.github.io/intro-to-yaml-a-human-friendly-data-serialization-standard/</guid><pubDate>Mon, 08 Jun 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Have you ever seen a file with the extensions .yml | .yaml? If yes, You may have opened it to explore what it is and what will it do? If no. No worries lets take a look at that what it is?&lt;/p&gt;
+&lt;h1&gt;What is YAML?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;YAML Ain’t Markup Language (YAML)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;YAML is a human friendly data serialization standard for all programming languages. Yes, it can work with most of the programming languages without any hastle. — Wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 200px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7d6eb53c41cdf55575268e0f09d2d868/772e8/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACo0lEQVQ4y42VXUgUURTHz+wkGFpquTO768zsLptW0gdBkPlSBBVYYL0ULS0ZaiY9FJFRUYnYSy9RUfQQ0WsQfeFDUBCFWXlnpaIQpA8ojOhRCR/Kmv7XOWN310m68OPcOx+/OefeOzNERDeBB/pBCf1tC8HbiH/u6Od4Ojdo2J4w7E+uYVcBApobT1JxWwTGWXpSOX6Jj30AFa9MZ0AKXZ82FuoiapMwrBnSA3zzD5ACDXLM2a3z7LpVL3xRH/gG8iKWJJFIky92KKw9ZOkjIGRfJ7reWjafnhv2DeEL14DznGUDZxkRRrpAFOFYDyZY6mlEXxDLxxOZBJead01HClaw8NrU2HQglGXbBdI5HI8FwlLSsvvLKuipYfXgJrkYA6AbonNgAoyBxPTiVMZDs2xk4XdQ5S1ZXYLs3gsIXUYwnOVh17RllroblWJrhnA9z50Ulo7Ekk3C3yr3wW4IOiBrQTzOwiHXypCorpkqOUy4KSgZJF6bTl7OX96wlw1jVb1UPXnOYnoXTxGOP8Zief1Raxf6cqxfrKyeFmocbXR6ELtOzVtgDJlON57caZKmqfPTjpUfjadXjtVkTvyyatcOx1L0JpbUvOWNM4R1IIdBTsqvVhk0adUG16R4vx7Cgi1FlPV1ga1hezBY5YNKyX2cTSmfu6Oc68Q72qz7m//JXBRQrmkFZegcO/iGnxyb+XiT8ibJ2Ao2cv/WbBkGwlGOL/lhgzz+qAg3c//ubMJ2vugKf32CV1HGZ+As91v+V9jGF/WC7dz/zXGnXBDu71GE95StF/mX8AKPR5QpkO10iPB2WIZ6kfAyj7dx6Vke94YIHwCHv6uZ4gz3FQmLWyDcC7YoUyJ3xSRTkGGWLzqjPEhTfg1H+PwOsIG/9HI6vgb8ATvSC6TIVMvxAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/7d6eb53c41cdf55575268e0f09d2d868/772e8/1.png&quot;
+        srcset=&quot;/static/7d6eb53c41cdf55575268e0f09d2d868/c26ae/1.png 158w,
+/static/7d6eb53c41cdf55575268e0f09d2d868/772e8/1.png 200w&quot;
+        sizes=&quot;(max-width: 200px) 100vw, 200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Courtesy: Wikipedia&lt;/p&gt;
+&lt;p&gt;Have you used XML and JSON? Have you ever tried these two? Let’s compare these 3 at a glance.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/481da433af027c213e9eac9d87e8c34f/8c557/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.58227848101266%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVQY0wXBaU+CYAAAYP55h6WLSRbIq9hSpx0iKMsUlEMqHYIklwdpHpQTU1etWlt9queBArtgewtFwqk4SgEsB6K5GKAiSDIFTjMgSRHZ80QmG0/jR2AHhYPEIZzGAji8Hz0IoCFoaryO9Zfu7XSkLh6UudfZbIa/g5vhj+OuW/cfRvfb6v8NJn673Vuo3UWr4XDqUHSXqvdlQ87d3FV8kdIEsl3LqXLR1NiRwujvLWPCyjZ1bdPlJd90q7w6FrWpVOsURJOpO4zuCZDJeurVyGKfXWndF1YO5w/4Ny1vfdY1vyQ/Faozil0z0mOJVWYVeyNZK9Fc8ca6pi85KItwJCbTeKOAN+loo4g186hyFqRt4sImyB6Rd2KXLiCFSCxRQVLi8Uk1THBwvBwC5b1/AwPalJSnQ6MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/481da433af027c213e9eac9d87e8c34f/f058b/2.png&quot;
+        srcset=&quot;/static/481da433af027c213e9eac9d87e8c34f/c26ae/2.png 158w,
+/static/481da433af027c213e9eac9d87e8c34f/6bdcf/2.png 315w,
+/static/481da433af027c213e9eac9d87e8c34f/f058b/2.png 630w,
+/static/481da433af027c213e9eac9d87e8c34f/8c557/2.png 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you can get what this structure is we can do some coding exercise related to it next?&lt;/p&gt;
+&lt;p&gt;Or else if you are still not clear let me explain to you a sample scenario to explain this.&lt;/p&gt;
+&lt;p&gt;Scene: You are having a bunch of data that need to get parsed to the webpage i.e to the front-end from an external file. In the early days, XML was used to parse data to the front-end. The following is the structure we have to write in the file and the file has the extension as .xml&lt;/p&gt;
+&lt;p&gt;I am going to save the personal details in this file and want to get it to the front-end.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Person&amp;gt;  
+     &amp;lt;name&amp;gt;Parathan&amp;lt;/name&amp;gt;  
+     &amp;lt;age&amp;gt;22&amp;lt;/name&amp;gt;  
+     &amp;lt;email&amp;gt;parathan98@gmail.com&amp;lt;/a&amp;gt;  
+&amp;lt;/Person&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After this, we can use specific programming models to get the details in this file to the front-end.&lt;/p&gt;
+&lt;p&gt;Then, JOSON came into the picture. Since we are using JavaScript in front-end development and in back-end development too JSON is called JavaScript Object Notation. This helped most of the developers to not take much time since they already know JS.&lt;/p&gt;
+&lt;p&gt;Let’s see how we can write in the JSON&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{  
+Person:[  
+   {  
+    name: &amp;quot;Parathan&amp;quot;,  
+    age:22,   
+    email: &amp;quot;parathan98@gmail.com&amp;quot;   
+    }  
+  ]  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is similar to Objects concept in JavaScript and mostly a better readable format for developers.&lt;/p&gt;
+&lt;p&gt;Similarly, YAML also provides better readability and easiness to the people who write YAML related configurations during the development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;YAML is used in Ansible.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ansible is an open-source software provisioning, configuration management, and application-deployment tool.&lt;/p&gt;
+&lt;p&gt;It runs on many Unix-like systems, and can configure both Unix-like systems as well as Microsoft Windows. It includes its own declarative language to describe system configuration. Ansible was written by Michael DeHaan and acquired by Red Hat in 2015. Ansible is agentless, temporarily connecting remotely via SSH or Windows Remote Management (allowing remote PowerShell execution) to do its tasks.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ansible is mostly used in DevOps automation tasks to deploy or installing applications and Softwares into a new environment. So, a person doesn’t need to be there to configure and install modules/dependencies one by one into a single environment.&lt;/p&gt;
+&lt;p&gt;I just give it to you to learn by yourself to learn about Ansible. Ansible might be very helpful for your future developments too.&lt;/p&gt;
+&lt;p&gt;The same JSON and XML file can be simply written in YAML as follows.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Person  
+- name: &amp;quot;Parathan&amp;quot;  
+  age: 22  
+  email: &amp;quot;parathan98@gmail.com&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Are you wondering what is this? Is it something like a notebook where you point out the details?&lt;/p&gt;
+&lt;p&gt;Yeah, YAML gives a simple way to write your configurations/data as much as simple and human-readable.&lt;/p&gt;
+&lt;h1&gt;Let’s make some hands-on experience with YAML…&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comments in YAML&lt;/strong&gt;: Comments are a useful method that helps the developers to know what a particular block of code is doing. Similarly here we use # as like Python comment syntax to make comments&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Person  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;name: Gates # name&lt;br&gt;
+age: 64 # age&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;In YAML only single-line comment is available NO MULTI-LINE COMMENTS. You have to use **#** for every line.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Documents in One file:&lt;/strong&gt; If you want to have separate properties and values inside one YAML file. This feature also YAML offers. Simply, you have to start with 3 hyphens ( — -) and ends with 3 hyphens ( — -)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---  
+name: Medium,  
+url: [www.medium.com](http://www.medium.com)  
+------  
+name: Twitter  
+url: [www.twitter.com](http://www.twitter.com)  
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I used the Python module YAML to test this&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import yaml
+
+if __name__ == &amp;#39;__main__&amp;#39;:  
+    stream = open(&amp;quot;foo.yaml&amp;quot;, &amp;#39;r&amp;#39;)  
+    dictionary = yaml.load_all(stream)
+    
+    for doc in dictionary:  
+	    print(&amp;quot;New document:&amp;quot;)
+	    for key, value in doc.items():
+		    print(key + &amp;quot; : &amp;quot; + str(value))
+		    if type(value) is list:
+			    print(str(len(value)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Following is the output you will get&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;New Document  
+name: Medium,  
+url: [www.medium.com](http://www.medium.com)  
+New Document  
+name: Twitter  
+url: [www.twitter.com](http://www.twitter.com)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Formatting using YAML:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In some cases, we may have to put a long sentence but in the YAML file, we may have to press ENTER for reading compatibility. But that entered places should not be shown when reading the YAML file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;bar: this is not a normal string it spans more than one line see?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In here, we will get as Python Dictionary&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{&amp;#39;bar&amp;#39;: &amp;#39;this is not a normal string it spans more than one line see?&amp;#39;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Take this as another example&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;bar:   
+  this is   
+  not a normal   
+  string it spans   
+  more than one line see?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we want to get the same as in the file.&lt;/p&gt;
+&lt;p&gt;Then we have to add &lt;strong&gt;|-&lt;/strong&gt; after :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;bar: |-  
+  this is   
+  not a normal   
+  string it spans   
+  more than one line see?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We will get this dictionary format as output in Python&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{&amp;#39;bar&amp;#39;: &amp;#39;this is \nnot a normal \nstring it spans \nmore than one line see?&amp;#39;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can notice that there is a new line (&lt;strong&gt;\n&lt;/strong&gt;) syntax is added inside the dictionary.&lt;/p&gt;
+&lt;p&gt;I think you may have got some basic into YAML. I am attaching some YouTube videos and Tutorials guide for your reference.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=EvEM1FQlFpQ&quot;&gt;Properties Vs YAML — What is the difference? | Why everyone is using YAML? Tech Primers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cdLNKUoMc6c&quot;&gt;YAML | In One Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/yaml/index.htm&quot;&gt;YAML Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Intro to Deadlock in Operating System]]></title><description><![CDATA[Deadlock is a condition where each process holding a resource and waiting to acquire a resource held by another process. 
+According to the…]]></description><link>https://parathantl.github.io/intro-deadlock-in-operating-system/</link><guid isPermaLink="false">https://parathantl.github.io/intro-deadlock-in-operating-system/</guid><pubDate>Sat, 11 Apr 2020 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;Deadlock is a condition where each process holding a resource and waiting to acquire a resource held by another process.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 555px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f6ec7b4a45a95c07346a7f43af1c5853/cd039/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.62025316455697%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVQoz21SyXKbQBDV/1elHMfJIV/gytGHWLY5xEe0jVgFiBlAYisJBGgxILZJI6yU5LirD8OjX7+u192jn0VZltuL2O/3TdP8X9a7/ICCuq7hIc/kmSQTHevq3MCEZVnDMADv/n5Kbrr2IPvy8mwdPKcI3GMQ0YNu4Nubr2Xd0NhubJ4m3hUZaL6fY6NAnI3QlGGYuaVrDp7bZLGyETcdDgaCKK2xQKu0aWrId3In+JZm7GCGEA/KcRybxHQse2ktITHGx+OxKkueF2D+sqyaU7Tksqp8z/t1f3978yXP83/tru1okTkhTwwjSJKiaaDRklVFwab5Bg6nKXiTZSmAVVXV54A3ILqq6sMRLUqaZqYgaKrag4YDhqGqViOOzlRXknVCOmObc3RkbjJJplCjUVHODBONx62ywPOWolRJkoUhGg1hsR8m795gxIjjDHsRH7bjKYqiqCUXRUEsa8yLD49Pq/W6k42TJAiDcBO2GYZplgGOJuju20+eU6No17ndLTdvIjvEAhqPfN8PgmDADsBnohPLMCVREkXJdV2eFx2P+qs62VUn8olbH6LGlWgWV0XuuM6Pu+8P7KNJV3rmGIXnZMHv5z6e61C73RWgd31hAFdlfT5AGK/P9DWbCFhWTG064/+8vnYrgMI2P55ni9X0fKGu4/qu16bn24vlZrN5P+CLC/gL30EJHtI50JYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/f6ec7b4a45a95c07346a7f43af1c5853/cd039/1.png&quot;
+        srcset=&quot;/static/f6ec7b4a45a95c07346a7f43af1c5853/c26ae/1.png 158w,
+/static/f6ec7b4a45a95c07346a7f43af1c5853/6bdcf/1.png 315w,
+/static/f6ec7b4a45a95c07346a7f43af1c5853/cd039/1.png 555w&quot;
+        sizes=&quot;(max-width: 555px) 100vw, 555px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+According to the illustration,&lt;/p&gt;
+&lt;p&gt;Resource 1 is allocated to Process1 and Resource 2 is allocated to Process 2. At the same time, Process 1 is waiting for Resource 2 which was assigned to Process 2 still. So, Process 1 will be in the waiting state to release Resource 2 by Process 1. Similarly, Process 2 is waiting for Resource 1 which was already assigned to Process 1. So, Process 2 will be in the waiting state.&lt;/p&gt;
+&lt;p&gt;A process in the Operating System will use resources in the following way&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Request a resource&lt;/li&gt;
+&lt;li&gt;Use the resource&lt;/li&gt;
+&lt;li&gt;Releases the resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Condition for Deadlock&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mutual exclusion&lt;/strong&gt;: The resources can not be shareable. Only one process can use the resource at a time. One process after that another process and then another process like it goes. Since the resources are not sharable, then deadlock will occur.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hold and Wait&lt;/strong&gt;: When a process is holding at least one resource and waiting/requesting for another resource deadlock will occur.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No preemption&lt;/strong&gt;: A resource can be only voluntarily released by the process itself. A resource can not be taken from a process unless the resource holding process releases that resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Circular wait&lt;/strong&gt;: A set of processes waiting for each other to form a chain structure. Refer to the image at the start of this post to know about the circular wait. The process waits for another process to release the resource and goes on and the final process waits for the first process to release its resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The above 4 conditions will lead to deadlock.&lt;/p&gt;
+&lt;h1&gt;Methods to handle Deadlock&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Deadlock ignorance&lt;/li&gt;
+&lt;li&gt;Deadlock Prevention&lt;/li&gt;
+&lt;li&gt;Deadlock Avoidance&lt;/li&gt;
+&lt;li&gt;Deadlock detection and Recovery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deadlock ignorance&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most of the OS tries to ignore deadlock. The deadlock occurs very rarely in OS. If it happens the OS gets hanged. If it gets hanged, usually restarting the system will make the OS work normally as before.&lt;/p&gt;
+&lt;p&gt;Imagine a method of inserting a deadlock handling code to the OS resource code, it needs to run the code in deadlock handling code part when there any deadlock occurs or when booting. This may cause system performance and speed to decrease. So, the OS resource code doesn’t include resource code.&lt;/p&gt;
+&lt;p&gt;Usually, Windows and Unix OS platforms use this type of method to handle deadlock.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Deadlock Prevention&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The system checks each transaction before it is executed to make sure deadlock won’t occur. If there is some issue will lead to deadlock, it won’t allow the system to execute.&lt;/p&gt;
+&lt;p&gt;Since we know there are 4 conditions causes the deadlock;&lt;/p&gt;
+&lt;p&gt;Removing/making false at least anyone of the 4 conditions or try to make false/remove all the 4 conditions that lead to deadlock will prevent the system from deadlock.&lt;/p&gt;
+&lt;p&gt;How it can be done&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Make mutual exclusion false&lt;/strong&gt;: Just by sharing the resources deadlock will be prevented. It is possible only in some cases. For example: Take printer it can not be shared with different processes to print pages. It will become complex or can not handle that much easily&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make no preemption false (preemption is true)&lt;/strong&gt;: Using time quantum method, preemption can be done. (&lt;em&gt;Allocating a particular time duration to access the resources is called the time quantum method.&lt;/em&gt;) For example, There are 3 processes trying to access a Resource R1, P1 process access Resource 1 for the first 3 milliseconds, then another 3 milliseconds process P2 access, while P1 access any other Resource which is needed for its execution and free at that time. Then P2 changes and P3 access Resource 1 for another 3 milliseconds it goes until the process runs fully,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make hold and wait false&lt;/strong&gt;: Trying to give all resources to the other process/trying to acquire the resource once it finished execution without holding it for so long time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Circular wait&lt;/strong&gt;: To remove circular wait; numbering to all resources like CPU -1, Printer — 2. and making the process to access resources in a particular order (increasing order decreasing order). In this case, a process will access the first CPU then Printer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deadlock avoidance&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s better to avoid a situation like a deadlock than make it a way to occur and then solving it. The simplest and most useful model requires that each process declare max no.of resources that it may need.&lt;/p&gt;
+&lt;p&gt;The deadlock avoidance algorithm dynamically examines the resource allocation. Therefore Circular wait condition will never occur.&lt;/p&gt;
+&lt;p&gt;Basic facts of Deadlock avoidance are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If a system in a safe state =&gt; no deadlock&lt;/li&gt;
+&lt;li&gt;If a system is in an unsafe state =? possibility of deadlock&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These algorithms will ensure that a system will never enter an unsafe state&lt;/p&gt;
+&lt;p&gt;I hope you got a small knowledge of what is a deadlock and how they handled and what are the conditions make deadlock to happen.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Zero to One in Object Oriented Concepts]]></title><description><![CDATA[Object Oriented Programming is one of the most widely used programming paradigms. The name itself defines how it works. “Object Oriented…]]></description><link>https://parathantl.github.io/zero-to-one-in-object-oriented-concepts/</link><guid isPermaLink="false">https://parathantl.github.io/zero-to-one-in-object-oriented-concepts/</guid><pubDate>Thu, 08 Aug 2019 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Object Oriented Programming is one of the most widely used programming paradigms. The name itself defines how it works. “Object Oriented” — the Object plays an important role. Manipulating objects and getting the results is the ultimate goal of Object Oriented Programming.&lt;/p&gt;
+&lt;p&gt;The languages that use Object Oriented Programming paradigms are known as Object Oriented Programming Languages. They are mostly high level languages such as&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;C#&lt;/li&gt;
+&lt;li&gt;Python — Python is both a Scripted/Structured &amp;#x26; Object Oriented Language&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To program in Object Oriented Programming, concepts called “&lt;strong&gt;Object Oriented Concepts&lt;/strong&gt;” are used. These concepts simplify &amp;#x26; add more value to Object Oriented Programming.&lt;/p&gt;
+&lt;p&gt;Those concepts are&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Encapsulation&lt;/li&gt;
+&lt;li&gt;Abstraction&lt;/li&gt;
+&lt;li&gt;Polymorphism&lt;/li&gt;
+&lt;li&gt;Inheritance&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before moving into these concepts, we need to know about Class &amp;#x26; Objects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;An Object&lt;/strong&gt; is the basic run-time entity in OOP. In our day-today life we see a lot of objects like a television, mobile phone, dog, humans, cars &amp;#x26; other living and non-living objects. These can be portrayed as objects in OOP.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A Class&lt;/strong&gt; is a blueprint or prototype that defines variables/properties and methods/functions common to all objects of a certain kind. It’s a logical component.&lt;/p&gt;
+&lt;p&gt;Simply said, Class is a &lt;strong&gt;user-defined&lt;/strong&gt; data type. Objects are &lt;strong&gt;variables&lt;/strong&gt; of a Class. Once the Class has been created we can create as many Objects as we want.&lt;/p&gt;
+&lt;p&gt;For example, take a class named Tree. State/properties of the Tree class are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name of the tree&lt;/li&gt;
+&lt;li&gt;Age of the tree&lt;/li&gt;
+&lt;li&gt;Type of the tree&lt;/li&gt;
+&lt;li&gt;Height of the tree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;State/properties are used to define the attributes of an object.&lt;/p&gt;
+&lt;p&gt;That is, &lt;strong&gt;State/properties/attributes&lt;/strong&gt; all represents the same thing.&lt;/p&gt;
+&lt;p&gt;Behaviors of the Tree can be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Giving fruit&lt;/li&gt;
+&lt;li&gt;Falling of leaves&lt;/li&gt;
+&lt;li&gt;Absorbing water from roots to the upper parts&lt;/li&gt;
+&lt;li&gt;Creating shadows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then, Mango is a variable of Class Tree. We can store and retrieve all the properties &amp;#x26; behaviors we defined for the class Tree by creating an object of Mango.&lt;/p&gt;
+&lt;p&gt;Syntax for Creating an object of Mango from class Tree:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tree&lt;/strong&gt; Mango;&lt;/p&gt;
+&lt;h1&gt;Encapsulation&lt;/h1&gt;
+&lt;p&gt;Have you ever used a tablet/medicine which encapsulated by a colored cover?&lt;/p&gt;
+&lt;p&gt;Inside that medicine is kept safely. We can’t find anything with our naked eye. To see what’s inside we need to open up that cover….&lt;/p&gt;
+&lt;p&gt;Similarly, all the &lt;strong&gt;data members (variables,attributes/properties)&lt;/strong&gt; &amp;#x26; &lt;strong&gt;behaviors(functions/methods)&lt;/strong&gt; are gathered together and closed. Class is a best example for Encapsulation.&lt;/p&gt;
+&lt;p&gt;For an instance,&lt;/p&gt;
+&lt;p&gt;You are going to the pharmacy to buy prescribed medicines for you. You handover the prescription to the pharmacist and then he/she will take the medicine from the store &amp;#x26; give you the bill.&lt;/p&gt;
+&lt;p&gt;In this scenario,&lt;/p&gt;
+&lt;p&gt;Medicines — act as variables or properties or attributes&lt;/p&gt;
+&lt;p&gt;Pharmacist — act as member function/method where he/she helps in giving you the medicine&lt;/p&gt;
+&lt;p&gt;You — external application or another software code&lt;/p&gt;
+&lt;p&gt;By using Encapsulation, &lt;strong&gt;data can be restricted&lt;/strong&gt; from the usage of the outside world. The function defined in the class only can access the properties. This can be defined at the implementation stage. Programmers can define and specify the accessibility of the member variables while under development rather than making all the variables global like in procedural languages. This controlling of accessibility is also known as &lt;strong&gt;Information hiding&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Encapsulation &lt;strong&gt;allows to expose the necessary things and hiding the important things from the outside world&lt;/strong&gt;. So, the hidden parts of a class acts like &lt;strong&gt;Encapsulation&lt;/strong&gt; &amp;#x26; the exposed parts acts like &lt;strong&gt;Abstraction&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1&gt;Abstraction&lt;/h1&gt;
+&lt;p&gt;Exposing necessary features of a class &lt;strong&gt;without explaining much or details&lt;/strong&gt; is done by Abstraction.&lt;/p&gt;
+&lt;p&gt;Today morning I wanted to make a hot tea and I used a water kettle to boil the water. I just turned on the &lt;strong&gt;On&lt;/strong&gt; button to start boil water. I don’t want to know the inner workflow of the kettle where it has high resistance and that resistance produces heat and boils the water. Instead, I have to fulfill my work easily. Therefore, having this On button to boil the water is known as Abstraction.&lt;/p&gt;
+&lt;p&gt;Similarly, we can take a remote controller which helps in manipulating TV operation using simple keys in the remote.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data abstraction&lt;/strong&gt; is a programming technique that depends on the separation of &lt;strong&gt;interface&lt;/strong&gt; and &lt;strong&gt;implementation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This data abstraction can be archived from using 2 different classes while coding using OOP&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abstraction class: (0–100)% abstraction&lt;/li&gt;
+&lt;li&gt;Interface class: 100% abstraction&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Inheritance&lt;/h1&gt;
+&lt;p&gt;The word itself describe what its functionality. Everyone has their inheritance qualities from their birth. You could have your grandparents/ your parents qualities from your birth. This is what Inheritance does in OOP.&lt;/p&gt;
+&lt;p&gt;A class can have properties &amp;#x26; methods of its parent class. Additionally the class can have its own properties and methods too. The parent class is called as &lt;strong&gt;base class&lt;/strong&gt;. The class that inherits base class is called as &lt;strong&gt;derived class&lt;/strong&gt;. Inheritance is the most powerful feature of OOP.&lt;/p&gt;
+&lt;p&gt;By using Inheritance effectively we could save a lot of time and reduce the errors in our program. This causes us to &lt;strong&gt;increase the quality of work&lt;/strong&gt; and &lt;strong&gt;productivity&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;There are different types of Inheritance&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Single Inheritance&lt;/li&gt;
+&lt;li&gt;Hierarchical Inheritance&lt;/li&gt;
+&lt;li&gt;Multiple Inheritance&lt;/li&gt;
+&lt;li&gt;Multi Level Inheritance&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Polymorphism&lt;/h1&gt;
+&lt;p&gt;Polymorphism is a &lt;strong&gt;Greek&lt;/strong&gt; term which refers to the ability of taking more than one form / overloading.&lt;/p&gt;
+&lt;p&gt;Say for example we all know about &lt;strong&gt;functions&lt;/strong&gt; in programming. They take different arguments inside parenthesis. Polymorphism is nothing but with the same function name, different arguments passed to get the result.&lt;/p&gt;
+&lt;p&gt;For e.g :- function called sum can take 2 arguments or 3 arguments.&lt;/p&gt;
+&lt;p&gt;sum(3,4) sum(10,23,56)Calling these functions by providing suitable number of parameters will give the result according to how the called function has designed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How the program distinguish which function need to be executed at the above scenario?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There is a feature called &lt;strong&gt;Dynamic binding&lt;/strong&gt; in OOP. This will call the actual function according to the program execution. When the program runs the function with 2 arguments compiler takes the two argument functions to execute the program similarly for 3 arguments too.&lt;/p&gt;
+&lt;p&gt;Until the run-time, compiler won’t know exactly which function need to be invoked. It depends on the way the program calls the function name. This is also be known as &lt;strong&gt;Late binding.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;Uses of Object Oriented Concepts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Data can be hidden from outside using &lt;strong&gt;Encapsulation&lt;/strong&gt; (Information hiding)&lt;/li&gt;
+&lt;li&gt;Code can be reused by using &lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Operators/methods.functions can be overloaded by using &lt;strong&gt;Polymorphism&lt;/strong&gt;. I.e: same function or operator name can be used for multi-tasking&lt;/li&gt;
+&lt;li&gt;Data abstraction can be archived from &lt;strong&gt;Abstraction&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Project migrations are easy (can be converted to larger size from smaller size)&lt;/li&gt;
+&lt;li&gt;Partitioning the works for same project&lt;/li&gt;
+&lt;li&gt;Manageable software complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Areas of application of OOP&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;AI and expert systems&lt;/li&gt;
+&lt;li&gt;Enterprise applications&lt;/li&gt;
+&lt;li&gt;Neural Network and parallel programming&lt;/li&gt;
+&lt;li&gt;Office automation systems&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hope you enjoyed a brief introduction to Object Oriented Concepts by reading. I hope to write how can we program Object Oriented Programming in my upcoming posts too.&lt;/p&gt;
+&lt;p&gt;Please send you feedback about my article to parathan19@gmail.com&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/parathantl/&quot;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&quot;http://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A basic guide to Closures in JavaScript]]></title><description><![CDATA[The Closure is a collection of all variables in scope at the time of function creation. To use closure, create a function inside another…]]></description><link>https://parathantl.github.io/basic-guide-to-closures-in-javascript/</link><guid isPermaLink="false">https://parathantl.github.io/basic-guide-to-closures-in-javascript/</guid><pubDate>Sat, 04 May 2019 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;The Closure is a collection of all variables in scope at the time of function creation. To use closure, create a function inside another function which is called a Nested Function. The inner function will have access to the variables in the outer function scope (&lt;strong&gt;Closure&lt;/strong&gt; helps to access the outer function scope), even after the outer function has returned. Closures are created every time a function is created.&lt;/p&gt;
+&lt;p&gt;Before moving on to understand about Closures, let’s first get the big picture about Scope Chain in JavaScript.&lt;/p&gt;
+&lt;p&gt;Normally, there are 2 types of scope:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global Scope&lt;/li&gt;
+&lt;li&gt;Local Scope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In ES5 version, a variable inside a function is not visible outside. But variables inside a block (conditions like if or while) are visible outside too.&lt;/p&gt;
+&lt;p&gt;From this, ES5 has function scope. There is no block scope.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Edited on: 9th May 2019&lt;/p&gt;
+&lt;p&gt;According to &lt;strong&gt;ES5&lt;/strong&gt;, using functions were the only way to declare a block scope in code.&lt;/p&gt;
+&lt;p&gt;But, in ES6 it was eased by &lt;strong&gt;let&lt;/strong&gt; &amp;#x26; &lt;strong&gt;const&lt;/strong&gt; keywords which provides block scope.&lt;/p&gt;
+&lt;p&gt;Anyhow, Its better to have a knowledge on how JavaScript evolved step by step.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lets continue this in ES5 version :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var a = 10;  
+function app(){  
+   var b = 2;  
+   console.log(a); // 10  
+   console.log(b); // 2  
+}  
+console.log(b); 
+// ReferenceError: b is not defined
+
+app();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As we already know, &lt;strong&gt;a&lt;/strong&gt; is a Global variable &amp;#x26; &lt;strong&gt;b&lt;/strong&gt; is a local variable which is &lt;strong&gt;specific&lt;/strong&gt; to the app function.&lt;/p&gt;
+&lt;p&gt;We can’t get the value of a local variable out of the local scope.&lt;/p&gt;
+&lt;h2&gt;Using a Nested Function — Function inside a Function&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var a = 10;
+
+function app(){  
+     var b = 2;  
+     var d = 3; function add(){  
+     var c = a + b;  
+   } return add;  
+}  
+
+var x = app();  
+console.dir(x);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here, the app is the parent function &amp;#x26; add function is the child function.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rather than using console.log, &lt;strong&gt;console.dir&lt;/strong&gt; is used to console all the properties of a specified JavaScript object which helps developers get the properties of that object&lt;/li&gt;
+&lt;li&gt;Variable x is assigned to app function &amp;#x26; the app function returns the add function. Therefore we could see all the object properties of the add function.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you see the console in the browser, you could see the Closure object inside the Scopes array.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/60938c472c53b8dac1841f9a36bafa33/64b22/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aAH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBABAQADAAAAAAAAAAAAAAAAAQARIVH/2gAIAQEAAT8hEtcsl//aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQGhIWHx/9oACAEBAAE/EJjxQ+Boo//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/60938c472c53b8dac1841f9a36bafa33/828fb/1.jpg&quot;
+        srcset=&quot;/static/60938c472c53b8dac1841f9a36bafa33/ff44c/1.jpg 158w,
+/static/60938c472c53b8dac1841f9a36bafa33/a6688/1.jpg 315w,
+/static/60938c472c53b8dac1841f9a36bafa33/828fb/1.jpg 630w,
+/static/60938c472c53b8dac1841f9a36bafa33/0ede0/1.jpg 945w,
+/static/60938c472c53b8dac1841f9a36bafa33/64b22/1.jpg 1199w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since the inner &lt;strong&gt;function add&lt;/strong&gt; accesses the outer function variables &lt;strong&gt;b &amp;#x26; d&lt;/strong&gt;, those 2 variables will be added to the Closure object for the reference.&lt;/p&gt;
+&lt;p&gt;Let’s have look at the next example for Closure:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var a = 10;  
+var startFunc;
+
+function app(){  
+      var b = 2; 
+   function add() {  
+      var c = a + b;  
+      console.log(c);  
+   } 
+   startFunc = add();  
+}
+
+app(); 
+// Invoke the app functionstartFunc;   
+
+// as the app function invoked above will assign the add function to startFunc &amp;amp; console the value of c&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;a Global function called startFunc is assigned to the add function which is a child function of the parent app function.&lt;/li&gt;
+&lt;li&gt;This is possible only after the app function is invoked, otherwise startFunc will act as a global variable without any value assigned&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Application of Closures in JavaScript&lt;/h2&gt;
+&lt;p&gt;Most of us use Closures while coding but we don’t get why we are using it. JavaScript doesn’t have the access modifiers like &lt;strong&gt;private, public, protected&lt;/strong&gt; like other Object Oriented Programming Languages. So, we have to use functions to protect the namespace from the outside code usage in ES5.&lt;/p&gt;
+&lt;p&gt;Especially in functions, &lt;strong&gt;Immediately-invoked Function Expression (IIFE)&lt;/strong&gt; is the one which is executed immediately after the declaration. You don’t need to invoke the function after the function is declared.&lt;/p&gt;
+&lt;p&gt;IIFE enables to write &lt;strong&gt;Module Pattern&lt;/strong&gt; (one of the Design Pattern) in JavaScript.&lt;/p&gt;
+&lt;p&gt;Syntax definition of IIFE is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(function() {  
+    //variables &amp;amp; scope that inside the function   
+})();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s have an example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var studnetEnrollment = (function () {  
+     //private variables which no one can change  
+     //except the function declared below. 
+     var count = 0;  
+     var prefix = &amp;quot;S&amp;quot;; 
+     // returning a named function expression  
+     function innerFunc() {  
+         count = count + 1;  
+         return prefix + count;  
+     };
+     return innerFunc;    
+})();
+     
+var x = studnetEnrollment(); // S1  
+console.log(x);
+
+var y = studnetEnrollment(); // S2   
+console.log(y);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;count &amp;#x26; prefix are the 2 private variables which can’t be changed by anyone &amp;#x26; can only be accessible to the inner function (here its innerFunc). This access is possible only by the feature called Closure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At the first time, when the studentEnrollment function is called, the count variable inside the function is incremented 1 by innerFunc function.&lt;/li&gt;
+&lt;li&gt;At the second time, the count is incremented the previous value of count which is 1 to 2&lt;/li&gt;
+&lt;li&gt;These are possible by the Closure feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The Closure is a collection of variables in an outer function which gives access to the inner function scope to protect the global namespace.&lt;/p&gt;
+&lt;p&gt;Closures enable developers to write clean code like OOP Languages which doesn’t confuse the global &amp;#x26; local variable names in ES5 version.&lt;/p&gt;
+&lt;p&gt;Happy Coding…….!!!!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to build a Rest API with Spring Boot using MySQL and JPA]]></title><description><![CDATA[Hi Everyone! For the past year, I have been learning JavaScript for full-stack web development. For a change, I started to master Java — the…]]></description><link>https://parathantl.github.io/how-to-build-a-rest-api-with-spring-boot-using-mysql-and-jpa/</link><guid isPermaLink="false">https://parathantl.github.io/how-to-build-a-rest-api-with-spring-boot-using-mysql-and-jpa/</guid><pubDate>Fri, 15 Mar 2019 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Hi Everyone! For the past year, I have been learning JavaScript for full-stack web development. For a change, I started to master Java — the powerful Object Oriented Language.&lt;/p&gt;
+&lt;p&gt;In that case, I found a very clean and elegant framework called Spring Boot to build a back end.&lt;/p&gt;
+&lt;p&gt;Previously, in JavaScript development, I used:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mongoose — an ORM (Object Relational Mapping) for Mongo DB&lt;/li&gt;
+&lt;li&gt;Sequelize — an ORM for MySQL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For Java-related development, there are lot of ORM’s like &lt;strong&gt;Hibernate, JPA&lt;/strong&gt; (Java Persistence API) &amp;#x26; &lt;strong&gt;Java Object Oriented Querying.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I choose to build with JPA which is traditionally used in Java applications.&lt;/p&gt;
+&lt;p&gt;It was very interesting, and took about one week to finish as I had to learn Spring Boot (There are a lot of annotations “&lt;strong&gt;@&lt;/strong&gt;” and other cool kinds of stuff to learn), JPA, and Hibernate along the way.&lt;/p&gt;
+&lt;p&gt;All this magic is mostly done by the &lt;strong&gt;annotations&lt;/strong&gt; (“&lt;strong&gt;@&lt;/strong&gt;” symbol) used in Spring Boot.&lt;/p&gt;
+&lt;h2&gt;Creating a Spring Boot Maven Project&lt;/h2&gt;
+&lt;p&gt;Let’s create a Spring Boot Maven Project Application using this &lt;a href=&quot;https://start.spring.io/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;“&lt;strong&gt;Maven&lt;/strong&gt;” is a project management tool used to manage dependency management. It’s just like Node Package Manager (&lt;strong&gt;NPM&lt;/strong&gt;) in the JS development environment.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d9e418c222ca63dfc4fa729177482a7c/8c557/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.56962025316456%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABS0lEQVQoz21QXUsCQRTdX2dpmhGEoln0B6xE21XJtvodUc8RBUEv0UNvQZ8gixZFUKYu22KzH64zOztrd11pN+vM4XK5M2fuuZcrVwslPl8s5WuisLVTEXerte3ypijwlQJf9rm+Iaz9ZZFf5eLRCHA+GV9ZyuYyqeXFdC6byqQXkvHoXCIGnJ2ZTsSmxoxGwuSGIViWpSiKafYhd13XTyilmqZ9IWQY5vA3xmJCiDKCLMsDPPCLoIeoqupHu9Xptk3ToNQGMMYmxQghiE4IFA5zdGSoSs9AfYqZQxjGmNg23MLXgVjXdU8QwPE7d3utxvvDY+f+VZWAtkOgDJ8GYsgYnB9Aytib+vQs1y9fjs8a+5J81fy8aSrXIJ6cGXraIYBh4uAL6ejkdu/07uC8fohty+sxdP9ZGOzAG9Ez61umYCT8znMy8hMufgMnacHppJ2Q/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/d9e418c222ca63dfc4fa729177482a7c/f058b/1.png&quot;
+        srcset=&quot;/static/d9e418c222ca63dfc4fa729177482a7c/c26ae/1.png 158w,
+/static/d9e418c222ca63dfc4fa729177482a7c/6bdcf/1.png 315w,
+/static/d9e418c222ca63dfc4fa729177482a7c/f058b/1.png 630w,
+/static/d9e418c222ca63dfc4fa729177482a7c/8c557/1.png 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We have &lt;strong&gt;package.json in NodeJS&lt;/strong&gt; for dependency management and &lt;strong&gt;pom.xml in Spring Boot&lt;/strong&gt; for dependency management.&lt;/p&gt;
+&lt;p&gt;In Group, write whatever the name you want. Usually, the domain name of the organization is written right to left.&lt;/p&gt;
+&lt;p&gt;For example our domain name is &lt;a href=&quot;http://www.javaAPI.com&quot;&gt;www.javaAPI.com&lt;/a&gt;, so the group name could be &lt;strong&gt;com.javaAPI.www&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Then in the Artifact type the &lt;strong&gt;name of the folder you want&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On the right side, add the following dependencies:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;WEB — To use the dependencies of Spring (The older framework of Spring Boot used to develop web applications)&lt;/li&gt;
+&lt;li&gt;JPA — Java Persistence API&lt;/li&gt;
+&lt;li&gt;MYSQL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then click “Generate Project”. You will find a rar file — extract it. Then open that folder in your favorite IDE.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 355px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0fbecb01de964674433ed0ebc71d464c/526ee/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 141.13924050632912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAIAAADuuAg3AAAACXBIWXMAAAsTAAALEwEAmpwYAAACz0lEQVQ4y5VUa2+bMBTl//+irfuydpm0qZWWNk8gGLAxBDAmgQQICbBTaEiVx9odmatrw7n4PpWhZj49Pdnce+HCXACGZVpxHK8ukCTJukWnQCqPL5OJuqCOSxg3CbFt6nne+hqCIBBCwO5yuZRSYqvc3d25fkiIOZ9Mlr6/2aR5nm1bbFp0apqmjDHYBd8wDN/3sVW+fP1WFMXEdoajUZKmsYzDUERRBBniEWEQQOIgquu6aZq6BRSYUwaDnziRSco8n1GGW+HF4XCoerRqR+hwIt/fP0DbZpkbCGpR/KT7oLmNExm3x3/gGXN9RGJXls1HOJE1g0Ary1LGK+p42SbNttlnyc+jKTR4VZY7EUmVcpNy3OVT5Lmq9TGsDnt3V2s2F6HAB/v9Ps/zS0MnsmWzdv/G3+WZiGLmuMyykXyTmFmWn0XwRJYybo4JzPMiEAE1dc49z+W3gnciI//vTl9lGEmDEKIbVedLVfWFcU7+8zzu950Uq4Qy16HMJBZS2J9fIava4rh/Mx/FkUHUharNJjPuOP7SQ+V5rtebOJGn87doF/sqWqVomwTdtpZxjErfJslGypWMVsk6vSBvkCrkeVUW/j4YO3xm2+OiCFGvTZMcV9ouKHG36lqCkqZcWbvTfSXKws3Yo6k/GsawKNyqCutanC041K26hpRp6iho1e4ahPsLnSw0w+U+AvyJCtso3Ft2R4ZpqrM5s9l285+1jb3FuL/0Az84S8y/yJOZ2nU/QaEyRm2KDKO2+4K/BMoGb18H4HA4xMjU9cX3sXb/MBj8GPz+9UvTdFXVVDw3oOv6aDRSQmu6FOGI6DPNmM3m6nw+HU9xBUy9PMvSa8A/MRgxRRSMx6zIJhalaKMF4Zzbpkkpw8TDPLvqfucz+EoYCfRtGGHKxxhgslUw4hE5TM++Ky59fg3YuA3YhxG+MUmOjdG13fsCvmWwJ/8F/0E9NAZUo0gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/0fbecb01de964674433ed0ebc71d464c/526ee/2.png&quot;
+        srcset=&quot;/static/0fbecb01de964674433ed0ebc71d464c/c26ae/2.png 158w,
+/static/0fbecb01de964674433ed0ebc71d464c/6bdcf/2.png 315w,
+/static/0fbecb01de964674433ed0ebc71d464c/526ee/2.png 355w&quot;
+        sizes=&quot;(max-width: 355px) 100vw, 355px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Click on the &lt;strong&gt;com.rest.API&lt;/strong&gt; and you will find an &lt;strong&gt;ApiApplication.java&lt;/strong&gt; file as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API;
+
+import org.springframework.boot.SpringApplication;  
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication  
+public class ApiApplication {public static void main(String[] args) {  
+      SpringApplication._run_(ApiApplication.class, args);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This code is enough to start your server. Normally spring boot runs on &lt;strong&gt;localhost:8080&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Type in your terminal as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;mvn spring-boot:run&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;See your localhost running in the web browser at port 8080. It looks blank as we haven’t done anything yet.&lt;/p&gt;
+&lt;h2&gt;Let’s explore the files and their tags&lt;/h2&gt;
+&lt;p&gt;If you have a look at the pom.xml file you may notice that the dependencies you put in when creating the application in Spring Initialize like MySQL, JPA, and Web will be inside a &lt;strong&gt;&lt;dependency&gt;&lt;/strong&gt; tag.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f928cb97921b2026a7952e621196bd4c/8c557/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVQoz4WS647bIBCF/f7Pttp0t63TNBsndnCW+x1sBwyFaH+kaqKOPqEjJJgzB5r37bbdtT+2P0+XEQtCFSHyhrrTd2CBEUdVC9IIIaAhu24YLhekMJ8ZcaQwCgQ4olfG4mNooA2lzM7u2MPziCkjmGDKKYTkDKhxPqwhphjzA0IKDaEsp3Tq0OvmcOoHMILuBAhjnEsmVIgh57Tm9V/KpQ1lXHi578EosLyqyqJUqEJdlVgkn6VZjU22rPfoqGvn4q07wM3rcfdr/P7ev731I4BDj48d7g7oY4/GkXu/5L8rpVQ6Mz2Zdjf87oGYBXUcW2ainfPkkqs9V2uiKRRxT9lpICb+6s+AbL51jEs/Oeet9ZZQaaxPTwb+mhkTWgw4O21bACE32mitjTEYa2un/Lyq7U9I1rWMP7XtGUImhSwYrQiWjNoY1+encw1sXaNS7uVlfzgO4BNqV/waobVQZglLfedHlJjrU3En2v0AEJ2Sn/M85akw3yiZPaNkVtP280SpHAa8zEu4hq+6iRjiY2JdG1Y/Ey8/HCNCq43/VzmCMYYQ/gG2BBuLVux5sgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
+        src=&quot;/static/f928cb97921b2026a7952e621196bd4c/f058b/3.png&quot;
+        srcset=&quot;/static/f928cb97921b2026a7952e621196bd4c/c26ae/3.png 158w,
+/static/f928cb97921b2026a7952e621196bd4c/6bdcf/3.png 315w,
+/static/f928cb97921b2026a7952e621196bd4c/f058b/3.png 630w,
+/static/f928cb97921b2026a7952e621196bd4c/8c557/3.png 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+The starter and tester dependencies are the core for creating the Spring Boot Application to serve on the server.&lt;/p&gt;
+&lt;p&gt;Now, let’s move to APIApplication.java which is the main file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API;
+import org.springframework.boot.SpringApplication;  
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication  
+public class ApiApplication {**public static void** main(String[] args) {  
+      SpringApplication._run_(ApiApplication.class, args);  
+   }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here the name of the package is in the first line of the code. Using that package name, you can import any class, method, or instances in another package file.&lt;/p&gt;
+&lt;p&gt;After that, two modules are imported from “org.springframework.boot” package.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SpringApplication&lt;/li&gt;
+&lt;li&gt;SpringBootApplication&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Since Spring boot is the latest application developing framework of Spring, it needs the packages of Spring Application as well as its specific packages.&lt;/p&gt;
+&lt;p&gt;After that &lt;strong&gt;@SpringBootApplication&lt;/strong&gt; Annotation is used. This Annotation consists of annotation which is used in Spring:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;@Component&lt;/strong&gt; — Tells the compiler that the following class is a component which should be included when compiling the whole application.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;@ComponentScan&lt;/strong&gt; — This one does the Scan of which packages we are going to use in the following Java class.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;@EnableAutoConfiguration&lt;/strong&gt; — enables Spring Boot’s autoconfiguration mechanism to import important modules for the Spring Boot to run.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These are the annotations used to start the Spring Boot Application to run on a server.&lt;/p&gt;
+&lt;p&gt;Here is an article I have written about &lt;a href=&quot;https://medium.com/@parathanlive123/annotation-their-uses-in-java-4285c9413365&quot;&gt;Annotation &amp;#x26; their uses in Java&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Let’s create Model for our data&lt;/h1&gt;
+&lt;p&gt;Let’s create a Model class to save, retrieve, update and delete the details of a book.&lt;/p&gt;
+&lt;p&gt;For that, I have to create a new package named &lt;strong&gt;model&lt;/strong&gt; and inside that creating a &lt;strong&gt;Book.java&lt;/strong&gt; class to put my code.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API.model;
+import javax.persistence.*;  
+import javax.validation.constraints.NotBlank;
+
+@Entity  
+@Table(name = &amp;quot;books&amp;quot;)
+
+public class Book {  
+    @Id  
+    @GeneratedValue  
+    private Long id;
+    @NotBlank  
+    private String book_name;
+    @NotBlank  
+    private String author_name;
+    @NotBlank  
+    private String isbn;
+
+    public Book(){  
+        super();  
+    }
+    public Book(Long id, String book_name, String author_name, String isbn) {  
+        super();  
+        this.id = id;  
+        this.book_name = book_name;  
+        this.author_name = author_name;  
+        this.isbn=isbn;  
+    }public Long getId() {  
+        return id;  
+    }public void setId(Long id) {  
+        this.id = id;  
+    }public String getBook_name() {  
+        return book_name;  
+    }public void setBook_name(String book_name) {  
+        this.book_name = book_name;  
+    }public String getAuthor_name() {  
+        return author_name;  
+    }public void setAuthor_name(String author_name) {  
+        this.author_name = author_name;  
+    }public String getIsbn() {  
+        return isbn;  
+    }public void setIsbn(String isbn) {  
+        this.isbn = isbn;  
+    }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here I’m using JPA (Java Persistence API) which is a collection of classes and methods to continuously store data into a database.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@Entity&lt;/strong&gt; — used to denote that this class is going to be an Entity in the database.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@Table&lt;/strong&gt; — which takes some values like the name you are going to name your table&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@Id&lt;/strong&gt; — denotes that the id is the primary key / identifying key for this table&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@NotBlank —&lt;/strong&gt; is used to say that these attributes should not be blank.&lt;/p&gt;
+&lt;p&gt;Other than that there is an empty constructor which has a super method to satisfy the JPA customs. Getter and setter methods are usually in a POJO class (&lt;strong&gt;Plain old Java object&lt;/strong&gt;).&lt;/p&gt;
+&lt;h1&gt;Creating the Repository&lt;/h1&gt;
+&lt;p&gt;Next, we are going to create a &lt;strong&gt;repository&lt;/strong&gt; package to deal with database management in Java.&lt;/p&gt;
+&lt;p&gt;Create an Interface called &lt;strong&gt;BookRepository.java&lt;/strong&gt; inside the &lt;strong&gt;repository&lt;/strong&gt; package.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API.repository;
+
+import com.rest.API.model.Book;  
+import org.springframework.data.jpa.repository.JpaRepository;  
+import org.springframework.stereotype.Repository;
+
+@Repository  
+public interface BookRepository extends JpaRepository &amp;lt;Book, Long&amp;gt; {}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I have imported the &lt;strong&gt;JpaRepository&lt;/strong&gt; package to use that repository in the &lt;strong&gt;BookRepository&lt;/strong&gt; interface by connecting my most recently coded Book model to do &lt;strong&gt;CRUD&lt;/strong&gt; operations.&lt;/p&gt;
+&lt;p&gt;There are already built-in methods in those repositories to do CRUD operations.&lt;/p&gt;
+&lt;p&gt;Eg:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.findAll() - to get All datas  
+.save()    - to save the got Data  
+.delete()  - to delete the data&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Inside the &lt;strong&gt;&amp;#x3C;&gt;&lt;/strong&gt; tag we are taking the Model name we are going to use and the Primary key’s datatype.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@Repository&lt;/strong&gt;: Annotation used to Indicate the DAO (&lt;strong&gt;Data Access Object&lt;/strong&gt;) component in the persistence layer.&lt;/p&gt;
+&lt;p&gt;It tells the compiler that the interface is going to use the Repository to do database activities.&lt;/p&gt;
+&lt;h2&gt;Creating Controller and Exception Handling&lt;/h2&gt;
+&lt;p&gt;Create a new package called &lt;strong&gt;controller,&lt;/strong&gt; and  inside that create a &lt;strong&gt;BookController.java&lt;/strong&gt; file which contains the endpoints.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API.controller;
+
+import com.rest.API.exception.BookNotFoundException;  
+import com.rest.API.model.Book;  
+import com.rest.API.repository.BookRepository;  
+import org.springframework.beans.factory.annotation.Autowired;  
+import org.springframework.web.bind.annotation.*;  
+import org.springframework.http.ResponseEntity;  
+import javax.validation.Valid;  
+import java.util.List;
+
+@RestController
+public class BookController {
+
+@Autowired  
+    BookRepository bookRepository;
+    
+    // Get All Notes
+    @GetMapping(&amp;quot;/books&amp;quot;)  
+    public List&amp;lt;Book&amp;gt; getAllNotes() {  
+        return bookRepository.findAll();  
+    }
+    
+   // Create a new Note
+   @PostMapping(&amp;quot;/books&amp;quot;)  
+   public Book createNote(@Valid @RequestBody Book book) {  
+        return bookRepository.save(book);  
+    }
+
+   // Get a Single Note
+   @GetMapping(&amp;quot;/books/{id}&amp;quot;)  
+   public Book getNoteById(@PathVariable(value = &amp;quot;id&amp;quot;) Long bookId) throws BookNotFoundException 
+   {  
+        return bookRepository.findById(bookId).orElseThrow(() -&amp;gt; new BookNotFoundException(bookId));  
+    }
+
+    // Update a Note_ @PutMapping(&amp;quot;/books/{id}&amp;quot;)
+	public Book updateNote(@PathVariable(value = &amp;quot;id&amp;quot;) Long bookId, @Valid @RequestBody Book bookDetails) throws BookNotFoundException 
+	{
+		Book book = bookRepository.findById(bookId).orElseThrow(() -&amp;gt; new BookNotFoundException(bookId));
+		book.setBook_name(bookDetails.getBook_name());
+		book.setAuthor_name(bookDetails.getAuthor_name());
+		book.setIsbn(bookDetails.getIsbn());
+
+		Book updatedBook = bookRepository.save(book);
+		return updatedBook;  
+	}
+
+   // Delete a Note
+    @DeleteMapping(&amp;quot;/books/{id}&amp;quot;)  
+    public ResponseEntity&amp;lt;?&amp;gt; deleteBook(@PathVariable(value = &amp;quot;id&amp;quot;) Long bookId) throws BookNotFoundException {  
+        Book book = bookRepository.findById(bookId)  
+                .orElseThrow(() -&amp;gt; new BookNotFoundException(bookId));
+                bookRepository.delete(book);
+                return ResponseEntity._ok_().build();  
+    }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The first imported package is for the Book Not Found exception (for which we are going to create a file in a bit).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explanation of Annotations we used here:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;RestController:&lt;/strong&gt; This annotation is used to denote every method in the annotated class as Domain Object.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So what is Domain Object…?&lt;/p&gt;
+&lt;p&gt;It simply says that Domain Object == Business Object.&lt;/p&gt;
+&lt;p&gt;They are usually represented by entities and value objects related to the endpoint we are giving to get the data from the database.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Autowired&lt;/strong&gt;: This annotation is used to wire the bean classes automatically.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For that, you need to know about “&lt;strong&gt;What is a bean Class..?&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;Basically, a Java Bean Class is a simple class which encapsulates many objects into it.&lt;/p&gt;
+&lt;p&gt;This is an article I wrote on &lt;a href=&quot;https://medium.com/@parathantl/java-bean-class-804c6431a57f&quot;&gt;Java Bean Classes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following are the Mapping Annotations for the endpoints to perform CRUD Operations.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;GetMapping:&lt;/strong&gt; This is an &lt;strong&gt;interface&lt;/strong&gt; which contains the path of the endpoint to perform a Get method. This GetMapping interface uses the RequestMapping interface which can have the “path, value, params, headers” method to perform the Get method in earlier Spring versions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now it’s simplified by using &lt;strong&gt;GetMapping.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;strong&gt;PostMapping&lt;/strong&gt;: This is an &lt;strong&gt;interface&lt;/strong&gt; which contains the path of the endpoint to perform the Post method.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PutMapping:&lt;/strong&gt; This is an &lt;strong&gt;interface&lt;/strong&gt; which contains the path of the endpoint to perform the Put method to Update.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DeleteMapping:&lt;/strong&gt; This is an &lt;strong&gt;interface&lt;/strong&gt; which contains the path of the endpoint to perform the Delete method.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the final lines, you probably noticed the “&lt;strong&gt;ResponseEntity&lt;/strong&gt;” keyword.&lt;/p&gt;
+&lt;p&gt;What is &lt;strong&gt;that&lt;/strong&gt;…??&lt;/p&gt;
+&lt;p&gt;It’s a Java class which inherits &lt;strong&gt;HttpEntity&lt;/strong&gt; class to manipulate the HTTP Responses. Whether the request of the connection is “&lt;strong&gt;OK&lt;/strong&gt;” or if there are any problems, throw an &lt;strong&gt;exception&lt;/strong&gt; from the &lt;strong&gt;HttpEntity&lt;/strong&gt; class.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;orElseThrow():&lt;/strong&gt; This is a method found in the &lt;strong&gt;Optional class in Java8&lt;/strong&gt; which was introduced to handle Exceptions. The optional class provides various utility methods to check the presence or absence of an object, which helps to deal with NullPointerException.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;orElseThrow&lt;/strong&gt; is a method that Returns value if present, otherwise invokes an exception.&lt;/p&gt;
+&lt;h2&gt;Creating a NotFoundException if there is no such book_id&lt;/h2&gt;
+&lt;p&gt;As orElseThrow method throws a NotFound Exception. The following is the Exception Handling part. Create a &lt;strong&gt;BookNotFoundException.java&lt;/strong&gt; file inside exception package.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package com.rest.API.exception;
+
+public class BookNotFoundException extends Exception 
+{
+	private long book_id;
+	
+	public BookNotFoundException(long book_id) {  
+	        super(String._format_(&amp;quot;Book is not found with id &amp;#39;%s&amp;#39;&amp;quot;, book_id));  
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The created class extends the Superclass of Exception. In the constructor, I’m passing the book_id &amp;#x26; prints the exception.&lt;/p&gt;
+&lt;p&gt;So, that’s it…&lt;/p&gt;
+&lt;p&gt;We have finished the REST API part. Now you can build the app (which was explained in Part 1) and do some Testings with Postman.&lt;/p&gt;
+&lt;h2&gt;Connecting with MySql Database&lt;/h2&gt;
+&lt;p&gt;Inside the &lt;strong&gt;application.properties&lt;/strong&gt; of your &lt;strong&gt;resources&lt;/strong&gt; folder, add the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;## Spring DATASOURCE (DataSourceAutoConfiguration &amp;amp; DataSourceProperties)
+spring.datasource.url = jdbc:mysql://localhost:3306/library  
+spring.datasource.username = root //normally put your MySQL username   
+spring.datasource.password = YOUR_MYSQL_PASSWORD
+
+## Hibernate Properties  
+# The SQL dialect makes Hibernate generate better SQL for the chosen database  
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect_
+
+# Hibernate ddl auto (create, create-drop, validate, update)  
+spring.jpa.hibernate.ddl-auto = update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s it.&lt;/p&gt;
+&lt;p&gt;We have built a basic REST API in Spring Boot. Congrats!&lt;/p&gt;
+&lt;p&gt;If anything is wrong or need to be corrected, please let me know in the comments section.&lt;/p&gt;
+&lt;p&gt;Get in touch with me on &lt;a href=&quot;https://twitter.com/Parathantl&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Let’s explore Slice(), Splice() & Spread Syntax(…) in JavaScript]]></title><description><![CDATA[I came across this freeCodeCamp challenge and got stuck for some time thinking about how I could find a way to solve it. They already…]]></description><link>https://parathantl.github.io/explore-slice-splice-spread-syntax-in-javascript/</link><guid isPermaLink="false">https://parathantl.github.io/explore-slice-splice-spread-syntax-in-javascript/</guid><pubDate>Fri, 25 Jan 2019 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;I came across this &lt;a href=&quot;https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/slice-and-splice&quot;&gt;freeCodeCamp&lt;/a&gt; challenge and got stuck for some time thinking about how I could find a way to solve it. They already mentioned solving using Slice &amp;#x26; Splice. I was confused at that time when to use Slice and when to use Splice.&lt;/p&gt;
+&lt;p&gt;Here, I’m gonna share how I solved it with those methods.&lt;/p&gt;
+&lt;p&gt;Both Slice and Splice are used to manipulate arrays. Let’s see how they do it.&lt;/p&gt;
+&lt;h1&gt;Slice:&lt;/h1&gt;
+&lt;p&gt;The Slice method takes 2 arguments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1st Argument&lt;/strong&gt;: Specifies from where the selection should be started.&lt;/p&gt;
+&lt;p&gt;For Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];  
+arr1.slice(1); // [5,8,9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From the first index (5) it will return the elements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2nd Argument&lt;/strong&gt;: Specifies at which level the endpoint should be. If you didn’t put this in the parenthesis while calling the slice method, it will return the elements from the starting index to the end of the array.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];
+console.log(arr1.slice(1,3));  
+//[ 5, 8 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you put a negative number while calling, the selection will be selected from the end of the array.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];  
+console.log(arr1.slice(-2));  
+//[ 8, 9 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note: Slice always returns the selected elements from the array.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Slice won’t change the array. The array remains intact. See the below Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];
+arr1.slice(2);
+console.log(arr1);  
+// [ 1, 5, 8, 9 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Even if you made some changes to the array it won’t affect it. It will return the original array as it is at the start.&lt;/p&gt;
+&lt;h1&gt;&lt;strong&gt;Splice:&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;It can take multiple arguments.&lt;/p&gt;
+&lt;p&gt;That means,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1st Argument&lt;/strong&gt;: Specifies at which position a new element or existing element should be added/removed. If the value is negative the position will be counted from the end of the array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2nd Argument&lt;/strong&gt;: The numbers of elements to be removed from the starting position. If it is 0, then no elements will be removed. If it is not passed, it will delete all elements from the starting position.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];
+console.log(arr1.splice(1,2));  
+// [ 5, 8 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;3rd Argument -&gt;nth Argument&lt;/strong&gt;: The value of the items you want to add to the array.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];
+console.log(arr1.splice(1,2,&amp;#39;Hi&amp;#39;,&amp;#39;Medium&amp;#39;));  
+// [5,8]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You may think that we have added ‘Hi’,’Medium’ to the array but it doesn’t show here…. Right?&lt;/p&gt;
+&lt;p&gt;Yes, we have consoled the &lt;strong&gt;arr1.splice(1,2,’Hi’,’Medium’).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Splice will return removed elements from the array only.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Splice will change the original array&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,5,8,9];
+arr1.splice(1,2,&amp;#39;Hi&amp;#39;,&amp;#39;Medium&amp;#39;);
+console.log(arr1);  
+// [ 1, &amp;#39;Hi&amp;#39;, &amp;#39;Medium&amp;#39;, 9 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;strong&gt;Spread Syntax:&lt;/strong&gt;&lt;/h1&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: Allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.&lt;/p&gt;
+&lt;p&gt;Let’s have an example for this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,3,6,7];  
+var arr2 = [5,arr1,8,9];  
+console.log(arr2);  
+// [ 5, [ 1, 3, 6, 7 ], 8, 9 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I want this to be in a single array like &lt;strong&gt;[ 5, 1, 3, 6, 7, 8, 9 ].&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I can use this Spread Syntax to solve this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr1 = [1,3,6,7];
+var arr2 = [5,...arr1,8,9];
+
+console.log(arr2);
+//[ 5, 1, 3, 6, 7, 8, 9 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Another main use of Spread Syntax is while copying an array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr = [1, 2, 3];
+var arr2 = arr;
+arr2.push(4);
+console.log(arr2);  // [ 1, 2, 3, 4 ]
+
+console.log(arr);// [ 1, 2, 3, 4 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I added “&lt;strong&gt;4&lt;/strong&gt;” to &lt;strong&gt;arr2&lt;/strong&gt; only. But it made the change to arr also.&lt;/p&gt;
+&lt;p&gt;We can solve this using the Spread Syntax as follows…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var arr = [1, 2, 3];
+var arr2 = [...arr];  // like arr.slice()
+
+arr2.push(4);
+console.log(arr2);
+// [ 1, 2, 3, 4 ]
+
+console.log(arr);
+// [ 1, 2, 3]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You may refer to the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax&quot;&gt;MDN&lt;/a&gt; documentation for more info about Spread Syntax.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, let’s have a look at the challenge.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function frankenSplice (arr1, arr2, n) {
+	// It&amp;#39;s alive. It&amp;#39;s alive!
+	let array2Copy = [...arr2];
+	array2Copy.splice(n,0, ...arr1); 
+	//console.log(array2Copy);
+	return array2Copy;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The main condition of this challenge is “should not alter arr1/arr2 after function has executed”.&lt;/p&gt;
+&lt;p&gt;So, created a &lt;strong&gt;copy array of arr2,&lt;/strong&gt; and &lt;strong&gt;using the splice&lt;/strong&gt; &lt;strong&gt;method&lt;/strong&gt; add the arr1 inside the arr2’s copy which is named as &lt;strong&gt;array2Copy.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Final Conclusion:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;-&gt; Slice method will&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;return the selected elements from the array&lt;/li&gt;
+&lt;li&gt;take 2 arguments&lt;/li&gt;
+&lt;li&gt;not alter the original array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;-&gt; Splice method will&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;return the removed elements of the array&lt;/li&gt;
+&lt;li&gt;take multiple arguments&lt;/li&gt;
+&lt;li&gt;alters the original array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is my first ever tutorial about coding — thanks for reading! Your feedback will help me to shape up my coding &amp;#x26; writing skill.&lt;/p&gt;
+&lt;p&gt;Happy Coding…!&lt;/p&gt;
+&lt;p&gt;Connect with me through &lt;a href=&quot;https://twitter.com/parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Introduction to Lodash — For JS lovers]]></title><description><![CDATA[I’m working with JavaScript arrays, objects & strings for a long time. But when it comes to developing apps; developers need to know the…]]></description><link>https://parathantl.github.io/intro-to-lodash/</link><guid isPermaLink="false">https://parathantl.github.io/intro-to-lodash/</guid><pubDate>Wed, 09 Jan 2019 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;I’m working with JavaScript arrays, objects &amp;#x26; strings for a long time. But when it comes to developing apps; developers need to know the arts of manipulating arrays &amp;#x26; objects.&lt;/p&gt;
+&lt;p&gt;Otherwise, we would use the vanilla (pure) javascript &amp;#x26; makes our code with more lines of code &amp;#x26; looks so complex to understand the workflow.&lt;/p&gt;
+&lt;p&gt;Nowadays in JS also &lt;strong&gt;.map(), .reduce(), .filter()&lt;/strong&gt; like pre-built methods are there. To make a quick &amp;#x26; elegant code workflow, Lodash module helps a lot with its pre-built methods.&lt;/p&gt;
+&lt;p&gt;What you all need to do is import the module in your project &amp;#x26; start manipulating the arrays free of mind.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But, you should have a look at how those methods are written in the pure javascript&lt;/strong&gt;. By clicking on the Lodash method’s name with &lt;strong&gt;CTRL.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(if you are using VS Code for this=&gt; its best)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This will help to boost your coding skill. Before Lodash there was another one called UnderscoreJS&lt;/p&gt;
+&lt;p&gt;UnderscoreJS was later acquired by Lodash developers &amp;#x26; developed ahead.&lt;/p&gt;
+&lt;p&gt;Nowadays, in most of the JS development project, Lodash used wisely.&lt;/p&gt;
+&lt;p&gt;If you want to include the Lodash inside your nodeJS project…&lt;/p&gt;
+&lt;p&gt;Simply type the following command in&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm i --save lodash&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will include the Lodash module inside your package.json file.&lt;/p&gt;
+&lt;p&gt;Then add the following piece of code to enable Lodash methods&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var _ = require(&amp;#39;lodash&amp;#39;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Let’s jump into some of the Lodash Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;difference([array],[values])&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;_.difference([2,3,1,4,5],[2],[3,4,5,6])  
+//[**1**]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This &lt;strong&gt;difference&lt;/strong&gt; method will compare the elements in the first array with the other arrays which are denoted as values. Then, it returns the elements which are not found in the other array as an array.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;2. isEqual(value, other)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var o1 = {&amp;#39;value&amp;#39; : 1};  
+var 02 = {&amp;#39;value&amp;#39; : 1};_.isEqual(object,other);  
+//true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will compare the parameters and returns boolean.&lt;/p&gt;
+&lt;p&gt;This method supports array, strings, boolean, maps &amp;#x26; objects.&lt;/p&gt;
+&lt;p&gt;Objects are compared by their own, not inherited. It will check the key, value pair &amp;#x26; returns boolean.&lt;/p&gt;
+&lt;p&gt;But functions &amp;#x26; node are compared very strictly. [To know about Node &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Node&quot;&gt;try this&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. differenceWith(array, [values], [comparator])&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var objects = [{ &amp;#39;x&amp;#39;: 1, &amp;#39;y&amp;#39;: 2 }, { &amp;#39;x&amp;#39;: 2, &amp;#39;y&amp;#39;: 1 }];
+console.log(_.differenceWith(objects, [{ &amp;#39;x&amp;#39;: 1, &amp;#39;y&amp;#39;: 2 }] , _.isEqual));
+//[ { x: 2, y: 1 } ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will perform similarly as like what different method performs. But here this takes comparator as an argument which can be another Lodash method or a function created by yourself.&lt;/p&gt;
+&lt;p&gt;This comparator is invoked by the previous two arguments (array &amp;#x26; values).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. drop(array, n=1)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is something like slice method in Pure JavaScript. The array is the array to be included. n=1 is the default one.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var a1 = [1,6,3,6];  
+_.drop(a1);  
+//[ 6, 3, 6 ]_.drop(a1,3)  //[ 6 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will remove the no.of elements from the left/starting of the array.&lt;/p&gt;
+&lt;p&gt;Similarly: dropRight, dropWhile are there.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. flatten(array)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There is already &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat&quot;&gt;.flat() method in JS&lt;/a&gt; to flatten the array. It do the same thing.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;_.flatten(   [1, [ 2,[4,5,[3, 5] ]] ])  
+//[ 1, 2, [ 4, 5, [ 3, 5 ] ] ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Similarly, flattenDeep(array) method will totally remove all sub-arrays and flatten to a single array.&lt;/p&gt;
+&lt;p&gt;There are many more methods which helps you to solve big lines of pure JS into a single line of code.&lt;/p&gt;
+&lt;p&gt;refer the Lodash &lt;a href=&quot;https://lodash.com/docs/4.17.11&quot;&gt;Documentation&lt;/a&gt; for more.&lt;/p&gt;
+&lt;p&gt;Happy Coding……!!&lt;/p&gt;
+&lt;p&gt;Connect with me on &lt;a href=&quot;https://twitter.com/Parathantl&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Getting Started with Redux — Beginners]]></title><description><![CDATA[6 hours ago, I was wondered what is Redux…?? Got confused & watched some YouTube videos & read some tutorials for 2–3 hours. Finally, I got…]]></description><link>https://parathantl.github.io/getting-started-with-redux/</link><guid isPermaLink="false">https://parathantl.github.io/getting-started-with-redux/</guid><pubDate>Thu, 08 Nov 2018 21:30:37 GMT</pubDate><content:encoded>&lt;p&gt;6 hours ago, I was wondered what is &lt;strong&gt;Redux&lt;/strong&gt;…?? Got confused &amp;#x26; watched some YouTube videos &amp;#x26; read some tutorials for 2–3 hours.&lt;/p&gt;
+&lt;p&gt;Finally, I got an idea &amp;#x26; tried some basic stuffs by my own &amp;#x26; got succeeded. So, I’m gonna share with you the experience with redux.&lt;/p&gt;
+&lt;p&gt;Redux is a &lt;strong&gt;State Management framework&lt;/strong&gt; to maintain large scaled applications. Redux can be used for both ReactJS and Angular Front-end. Myself mostly familiar with ReactJS, in ReactJS; we set state in construction using “&lt;strong&gt;this.state&lt;/strong&gt;” &amp;#x26; “&lt;strong&gt;this.setState&lt;/strong&gt;” keywords. This is possible in a small application.&lt;/p&gt;
+&lt;p&gt;If we are going to develop large application, like scheduling employees for a company. We need so much of configurations like time schedule &amp;#x26; changing details so on….&lt;/p&gt;
+&lt;p&gt;At this point Redux comes in to play,&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6be642ae1f34013ca9d16a55e1028038/8c557/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACtUlEQVQoz2MIzVrMEJGzkiEibz5D0GwGRt98EWH/SiZ+I3dWCQYGBgEgZgdi3np3PsmPlcx8uVYcSuaq4oo8ouri4vKGMrpyKoou4mIKHUbG/PU2NoIM7lF9TBG5C4PCM7cXRFZ4LUvvUXqR26//PKFF6VpYTrWbb9Yeo+yMeq+79Yo3n7RrP33eIv9qYXHYVu+szc2h+av7a0Mzti4ID3kxPzLq0RR//8cMEdmLAyLzFlWGxF9Wj6o2XZAzQe1/6XSz/8lt2v8i8iZ2h+ZubkjLndR9v0Hpz5NO/f+v2hT/rygLOuKTu6snomRze0N41vnF0ZH/F8bG/p8aEPCfISRvY3RQwS79hMx6BuutDGyRxXlTI8sSCqObGDRSSv8zpJTMY+AG0r9rGDRbC4pnLS4JSelKcjdyCOtxdg5rtc4LyjDrd7Cz7HZytuxydbVkSExtLE9JroyritRX36jIwBGRs7MlMnu/T3hROoO8ZgiPqoaeip2zn8H///8ZfHK2VlnmnjdYPGsXMFgZmEF4SdUchnY7a4Z+F1eGbjc3Boaptal/JlUm/JhQFvO/Jdl2fnD+hoK4wgVWUXm7GMKzVzJE5i5nCM5cwhBatp4hPGtpQ2jqPHPftOkMb///ZwSZurZqBmOfhyvzVD9/pj5PTyaGyVUJ3yaURX/uK4n635ZqPyeocI9/dP7KCeE5y7Ui81aYR+SuNo7InmubX1m/rai27W5hTfOdvIqa1Or2Loa49GwmIRERBhTQkO4nW5fqLVsa56GUE2YnDhRiCstalBuRs6wvImdpR0TuivaovCU9BdXN/+s6uv9XNLf/z6us6y9paGWoaO5gTi8sQzWwMcOPoa8oDMTkAmJBIAZZyQYNI1aQREz5WYbc8urgnPKapNyK2tTs0irDwppGBiBmTM4tRDEPAIBVAyXpw3SsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/6be642ae1f34013ca9d16a55e1028038/f058b/1.png&quot;
+        srcset=&quot;/static/6be642ae1f34013ca9d16a55e1028038/c26ae/1.png 158w,
+/static/6be642ae1f34013ca9d16a55e1028038/6bdcf/1.png 315w,
+/static/6be642ae1f34013ca9d16a55e1028038/f058b/1.png 630w,
+/static/6be642ae1f34013ca9d16a55e1028038/8c557/1.png 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This, is the &lt;strong&gt;simplest diagram&lt;/strong&gt; to illustrate the workflow of Redux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Store&lt;/strong&gt; is the main &lt;strong&gt;holder&lt;/strong&gt; of &lt;strong&gt;all the State of the application&lt;/strong&gt;. It will &lt;strong&gt;render&lt;/strong&gt; the &lt;strong&gt;current state of application to the Front-End&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If there any &lt;strong&gt;actions&lt;/strong&gt; created in View side; it will &lt;strong&gt;trigger&lt;/strong&gt; some &lt;strong&gt;actions to Action Creators in Redux&lt;/strong&gt;. Then we have to &lt;strong&gt;dispatch that action to the store.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At the same time &lt;strong&gt;Reducer&lt;/strong&gt; in Redux &lt;strong&gt;takes currentState of the application &amp;#x26; the state from the Action Creator&lt;/strong&gt;. Then &lt;strong&gt;compare those two and send them back to the store&lt;/strong&gt; to change the state.&lt;/p&gt;
+&lt;p&gt;Let’s see one by one.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Store&lt;/strong&gt; : responsible for the entire state of your application.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A method called &lt;strong&gt;createStore()&lt;/strong&gt; on the Redux object, which you use to create the store. This method takes a &lt;strong&gt;reducer&lt;/strong&gt; function as a required argument.&lt;/p&gt;
+&lt;p&gt;For example&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const store = Redux.createStore(reducer_Name);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, we’ll see What is reducer..?&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Reducer&lt;/strong&gt; : As defined earlier reducer is a function which takes current state &amp;#x26; the state changed by the action creator &amp;#x26; compares them &amp;#x26; return the state.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let initialState = 0;  
+const reducer = (currentState= initialState, stateFromAction) =&amp;gt; {  
+//Here it will compare the state of initialSate &amp;amp; stateFromAction &amp;amp; //if there any changes then  
+//currentState = stateFromAction  
+//if no changes currentState= initialState
+
+return currentSatate;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally it will return &lt;strong&gt;currentState&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Action Creator &amp;#x26; Actions&lt;/strong&gt; : All state changes are initiated by dispatching actions. Action is similarly like JavaScript Object that contains the event of the action which has happened. As its an object. it should has an attribute of ‘&lt;strong&gt;type&lt;/strong&gt;’ which defines the type of action happened.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example a login event has occurred. So, the type is &lt;strong&gt;LOGIN&lt;/strong&gt; (Normally action values are written in capital letters.)&lt;/p&gt;
+&lt;p&gt;Action Creator is a function which returns the action which was done in the View layer.&lt;/p&gt;
+&lt;p&gt;For example :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const action = {type: &amp;#39;LOGIN&amp;#39;}
+
+// Define an action creator here:
+
+function actionCreator(){
+	return action;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, we have to pass the action that has happened to to store to change the store’s current state. For that, we have to dispatch the action to the store. There after reducer will compare the current state &amp;#x26; the state from the action &amp;#x26; send back the original current state to the store to change the View.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;store.dispatch(actionCreator());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above code will dispatch the action to the store.&lt;/p&gt;
+&lt;p&gt;Let’s try a simple Counter Application in Redux&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// define a constant for increment action types  
+const INCREMENT = &amp;#39;INCREMENT&amp;#39;;
+
+// define a constant for decrement action types
+const DECREMENT = &amp;#39;DECREMENT&amp;#39;; 
+let initialState = 0;
+const counterReducer = (state = initialState, action) =&amp;gt;{switch(action.type){  
+   case INCREMENT:  
+       return state + 1;  
+       break;  
+   case DECREMENT :  
+       return state -1;  
+       break;  
+   default:  
+       return state;  
+       break;  
+}  
+};
+// define an action creator for incrementing
+
+const incAction** = () =&amp;gt; {  
+  return {  
+     type: INCREMENT  
+}};
+// define an action creator for decrementing
+
+const decAction = ()=&amp;gt;{  
+   return {  
+      type: DECREMENT  
+}};
+
+const store = Redux.createStore(counterReducer);
+
+// define the Redux store here, passing in your reducers&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To avoid the inconvenience with Strings I already declared the strings to variables.&lt;/p&gt;
+&lt;p&gt;incAction &amp;#x26; decAction are action creator function, (Without creating action and returning them inside an action creator function; I’m totally creating it within an action creator)&lt;/p&gt;
+&lt;p&gt;You may use any data structures like for loop, while loop &amp;#x26; switch cases inside the reducer function according to your application preferences.&lt;/p&gt;
+&lt;p&gt;Switch case takes the argument of &lt;strong&gt;action.type&lt;/strong&gt; (here type is the attribute, value we put in the action creator function)&amp;#x26; checks for the possibilities &amp;#x26; return the suitable functionalities.&lt;/p&gt;
+&lt;p&gt;Here you may have noticed that the initial state is not directly assigned to the current state. We are taking a copy of the initial state and then manipulate them. &lt;strong&gt;You should never Mutate the State.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I think these are the main things you have to consider as a beginner for Redux. Since, I’m also a beginner I have tried my best to write what I have experienced about redux. If there any corrections please mention them in comment section.&lt;/p&gt;
+&lt;p&gt;Happy Coding Folks…!!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Java Bean Class]]></title><description><![CDATA[Java Bean class is a Simple class that encapsulates many object in to a single object. Usually Bean contains the following conventions…]]></description><link>https://parathantl.github.io/java-bean-class/</link><guid isPermaLink="false">https://parathantl.github.io/java-bean-class/</guid><pubDate>Sat, 13 Oct 2018 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Java Bean class is a Simple class that encapsulates many object in to a single object. Usually Bean contains the following conventions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;implements Serialize interface&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Serialization is the process of changing objects into a byte stream. The byte stream is the data type which is used to store in a physical file, memory or database. So, serialization process is much important according to programming.&lt;/p&gt;
+&lt;p&gt;Usage of Serialization are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;save/persist state of an object.&lt;/li&gt;
+&lt;li&gt;To travel an object across a network.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. should have a public no-arg constructor.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.All properties in java bean must be private with public getters and setter methods.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shall We have a Sample code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Java Program of JavaBean class
+
+public class Book implements java.io.Serializable {
+	private int id;
+	private String book_name;
+  
+	//Public Constructor with No Arguments
+	public Book() { } //Following are getter &amp;amp; setter methods
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getId() {
+		return** id;
+	}
+
+	public void setBook_name( String book_name){
+		this.book_name= book_name;
+	}
+
+	public String getBook_name(){
+		return book_name;
+	}
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Some syntax used for Setter method&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is in public&lt;/li&gt;
+&lt;li&gt;return type should be void : As it sets the value only&lt;/li&gt;
+&lt;li&gt;It is written with “set” prefix and the name Eg: &lt;strong&gt;setBook_name&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;It should take some arguments like without no arguments is invalid&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some syntax used for Getter methods&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is in public&lt;/li&gt;
+&lt;li&gt;return type should be the data type of the respective requirement data&lt;/li&gt;
+&lt;li&gt;Method be prefixed with “get” Eg: &lt;strong&gt;getBook_name&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;should not take any arguments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here, you may get some doubt of POJO class &amp;#x26; Bean Class are same.&lt;/p&gt;
+&lt;p&gt;Am I right..? If you refer the database entity code class, that is called POJO class.&lt;/p&gt;
+&lt;p&gt;That means, all POJO class are Bean class but not Bean class are POJO. Just keep in mind.&lt;/p&gt;
+&lt;p&gt;This is a answer found on StackOverFlow :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A Java Bean follows certain conventions. Getter/setter naming, having a public default constructor, being serializeable etc.&lt;/p&gt;
+&lt;p&gt;A POJO (plain-old-Java-object) isn’t rigorously defined. It’s a Java object that doesn’t have a requirement to implement a particular interface or derive from a particular base class, or make use of particular annotations in order to be compatible with a given framework, and can be any arbitrary (often relatively simple) Java object.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This may be helpful to you.&lt;/p&gt;
+&lt;p&gt;Thank you.&lt;/p&gt;
+&lt;p&gt;Happy Coding Forks….!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Send SMS in NodeJS using Nexmo]]></title><description><![CDATA[Hi, As I’m JS enthusiast; I love doing JavaScript developing due to its easiness & lot of people there to help. Today, I have came up to…]]></description><link>https://parathantl.github.io/send-sms-in-nodejs-using-nexmo/</link><guid isPermaLink="false">https://parathantl.github.io/send-sms-in-nodejs-using-nexmo/</guid><pubDate>Thu, 04 Oct 2018 13:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Hi, As I’m JS enthusiast; I love doing JavaScript developing due to its easiness &amp;#x26; lot of people there to help.&lt;/p&gt;
+&lt;p&gt;Today, I have came up to show you how to implement, message sending facility using NodeJS using Nexmo service provider.&lt;/p&gt;
+&lt;p&gt;Lot of people are interested in Start-up &amp;#x26; need to grow their business using SMS promotions.&lt;/p&gt;
+&lt;p&gt;Lets move to the coding portion.&lt;/p&gt;
+&lt;p&gt;First of all you have to create Nexmo account : &lt;a href=&quot;https://dashboard.nexmo.com/sign-up&quot;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, create a new folder with a name you want&lt;/p&gt;
+&lt;p&gt;Create &lt;strong&gt;package.json&lt;/strong&gt; using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm init&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now,&lt;/p&gt;
+&lt;p&gt;We have to install express &amp;#x26; body-parser to the application to use.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm install express body-parser — save&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then, create a &lt;strong&gt;index.js&lt;/strong&gt; file in the root folder&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const express = require(&amp;#39;express&amp;#39;);
+//importing express to useconst 
+
+bodyParser = require(&amp;#39;body-parser&amp;#39;);
+//importing body parser to get the body input const 
+
+app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); 
+
+require(&amp;#39;./controller.js&amp;#39;)(app);   
+
+//requiring app Which is an express instance to use in controller file
+
+const server = app.listen(3000);
+//configure the server to run on port 3000
+
+console.log(&amp;quot;Server working on 3000&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, create &lt;strong&gt;controller.js&lt;/strong&gt; file in the root folder.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;module.exports = function (app) {
+	const Nexmo = require(&amp;#39;nexmo&amp;#39;);       
+	const nexmo = new Nexmo({          
+	        apiKey: Your_API_KEY,          
+	        apiSecret: Your_API_SECRET_KEY      
+	});
+
+	const config = {          
+		number: YOUR_REGISTERED_MOBILE_NUMBER      
+	}
+	
+	app.post(&amp;#39;/send&amp;#39;, (req, res) =&amp;gt; {   
+	//Setting endpoint of /send  
+	// Send SMS          
+	     nexmo.message.sendSms(              
+	     config.number,              
+	     req.body.toNumber,              
+	     req.body.message, { type: &amp;#39;unicode&amp;#39;},              
+     (err, responseData) =&amp;gt; { if (responseData)
+     {          	
+	     console.log(responseData) 
+     }   
+	});      
+}); 
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here we are using the app instance which we declared in the &lt;strong&gt;index.js&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Then, we are importing Nexmo module &amp;#x26; creating an instance of Nexmo module;&lt;/p&gt;
+&lt;p&gt;for &lt;strong&gt;apiKey&lt;/strong&gt; &amp;#x26; &lt;strong&gt;apiSecret&lt;/strong&gt; you have to give your Nexmo account’s details.&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;config object&lt;/strong&gt; you have to put the &lt;strong&gt;registered mobile number&lt;/strong&gt; for your Nexmo account as value for the number attribute.&lt;/p&gt;
+&lt;p&gt;And, after that , a POST request with “&lt;strong&gt;/send&lt;/strong&gt;” endpoint.&lt;/p&gt;
+&lt;p&gt;Wrapping the &lt;strong&gt;nexmo.message.sendSms()&lt;/strong&gt; method which is predefined in the Nexmo to send message inside the POST request.&lt;/p&gt;
+&lt;p&gt;Finally, we are console the message details in the terminal/command line.&lt;/p&gt;
+&lt;p&gt;Now, Start the server using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;node index.js&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And test it with Postman.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7702293db7c0f446ecd06fc488a2a36d/e5ca1/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.278481012658226%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8klEQVQY032Pz06EMBDG+/SygLSo2ZsvYOLNiO5mWVp0AbNXL558BIWW/qO0tsRN1IO/fJl8M5OZyQC8PrvJowSiHCEI4WohjmOEUJZlcCGKIl9M4tX1ZZKm6QU8X+ehC96Pz68HssekxtV+uyk3j1VVkbpu27brOh+bpsEYE0Ke6vp4wEVR3N7tHrZVWe6Adc7LaWG0FELqSQvOlODmB/OJaTKjUFcv9v7NuFmDkTFGqZR+UrB+oD3vPygfBs6lGLmmVHM+/cbN02yCAX5GKeVvcyGGT8ZGS0cnpE+/pc1fqUXeAHfCb7LWLtYGwjch/sMX/2o4iDxNUm8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/7702293db7c0f446ecd06fc488a2a36d/f058b/1.png&quot;
+        srcset=&quot;/static/7702293db7c0f446ecd06fc488a2a36d/c26ae/1.png 158w,
+/static/7702293db7c0f446ecd06fc488a2a36d/6bdcf/1.png 315w,
+/static/7702293db7c0f446ecd06fc488a2a36d/f058b/1.png 630w,
+/static/7702293db7c0f446ecd06fc488a2a36d/40601/1.png 945w,
+/static/7702293db7c0f446ecd06fc488a2a36d/78612/1.png 1260w,
+/static/7702293db7c0f446ecd06fc488a2a36d/e5ca1/1.png 1332w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you get &lt;strong&gt;Non White-listed Destination — rejected&lt;/strong&gt; error.&lt;/p&gt;
+&lt;p&gt;You have to register it in your Nexmo Account.&lt;/p&gt;
+&lt;p&gt;To do that &lt;a href=&quot;https://dashboard.nexmo.com/test-numbers&quot;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yes, you have done it.&lt;/p&gt;
+&lt;p&gt;Happy Coding Folks..!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Annotation & their uses in Java]]></title><description><![CDATA[Hello, I’m newbie to Java world & so new to Spring Boot. So, I don’t have a prior experience with spring also. As a new one, I’m writing…]]></description><link>https://parathantl.github.io/annotation-uses-in-java/</link><guid isPermaLink="false">https://parathantl.github.io/annotation-uses-in-java/</guid><pubDate>Tue, 02 Oct 2018 15:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Hello, I’m newbie to Java world &amp;#x26; so new to Spring Boot. So, I don’t have a prior experience with spring also. As a new one, I’m writing this to new people to Java. Experts, correct me in the comments if its wrong.&lt;/p&gt;
+&lt;h1&gt;What is Annotation..?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a note by way of explanation or comment added to a text or diagram.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Above, is the dictionary explanation for Annotation.&lt;/p&gt;
+&lt;p&gt;In Java&lt;/p&gt;
+&lt;p&gt;Annotation is a tag that used for&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;methods&lt;/li&gt;
+&lt;li&gt;class&lt;/li&gt;
+&lt;li&gt;interface&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;which adds more information about those for Java compiler / JVM(Java Virtual Machine).&lt;/p&gt;
+&lt;p&gt;You may have already experienced with some built-in Java function when you done with basic Java stuffs.&lt;/p&gt;
+&lt;p&gt;Like,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;@override — used to override the parent class method in sub class method&lt;/li&gt;
+&lt;li&gt;@SuppressWarnings — used to suppress warnings issued by the compiler.&lt;/li&gt;
+&lt;li&gt;@Deprecated — compiler prints warning because of the method is deprecated as it could be removed in the future versions. So that its better not to use such method.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let’s have a look at Java Custom Annotation&lt;/p&gt;
+&lt;p&gt;Java Custom Annotation or Java User defined annotations are easy to use and create (That means even you and me can create an annotation according to our need).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;@interface&lt;/em&gt;&lt;/strong&gt; element is used to declare an annotation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Like this&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;@interface parathan{}&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;to create annotation; annotation should have the following characters&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;method should not have parameters&lt;/li&gt;
+&lt;li&gt;should not throw any clause&lt;/li&gt;
+&lt;li&gt;may have default values&lt;/li&gt;
+&lt;li&gt;should return a class, method, enum, String like primitive data type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Type of Annotation&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Marker Annotation&lt;/li&gt;
+&lt;li&gt;Single Value Annotation&lt;/li&gt;
+&lt;li&gt;Multi-value Annotation&lt;/li&gt;
+&lt;li&gt;Marker Annotation — Annotation that have no methods inside it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Eg: @Deprecated @Override&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@interface parathan{}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Single-value Annotation — Annotation that have one method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@interface parathan{&lt;/p&gt;
+&lt;p&gt;int value();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Default value can be provided for it by following code snippet&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@interface parathan{&lt;/p&gt;
+&lt;p&gt;int value() &lt;strong&gt;default&lt;/strong&gt; 0;&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Applying a Single Annotation in code&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@parathan(value=10)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3.Multi-value Annotation — Annotation that has more method than one&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;@interface&lt;/strong&gt; parathan{&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;int&lt;/strong&gt; age();&lt;/p&gt;
+&lt;p&gt;String name();&lt;/p&gt;
+&lt;p&gt;String country();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Applying Multi Annotation can be as follows&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@parathan(age=20,name=”Parathan Thiyagalingam”,country=”Sri Lanka”)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Built in Annotations used in Custom Annotations&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;@Target&lt;/li&gt;
+&lt;li&gt;@Retention&lt;/li&gt;
+&lt;li&gt;@Inherited&lt;/li&gt;
+&lt;li&gt;@Documented&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;1. &lt;strong&gt;@Target&lt;/strong&gt; —&lt;/h3&gt;
+&lt;p&gt;used to betoken to which type the annotation to be used&lt;/p&gt;
+&lt;p&gt;For that we have to import &lt;strong&gt;java.lang.annotation.ElementType&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;we use&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Target(ElementType.some_thing)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here some_thing need to be replaced by the following keywords if you are using where the annotation need to be applied.&lt;/p&gt;
+&lt;p&gt;If you are going to use it for “class,interface,enumeration”&lt;/p&gt;
+&lt;p&gt;then&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Target(ElementType.Type)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you are going to use it for methods&lt;/p&gt;
+&lt;p&gt;then&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Target(ElementType.METHOD)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 628px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b2cd4695a5342e001c4d49f601e20eff/3d84d/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVQoz3XQa0vDMBQG4Pz/PyKC03mblwmifhCdm+LUKU679bI096Zp2g57MVu1dgPDQwg5L+TkgOFLf2E0eBsPm17fHx+eek+jQWU46j+bw+v9Mv8TBu2Dzc7J9v7x1vXdee/h6vb+snIzuDg83T7q7nROF9XDk9ZRt93ptlt7G8dnu1USxFqXZVEUeZZ91fI8S9JEiIBzTimRoeSCYYJ1HJVlmf+GwQw6KgpkyMJI1JQOGEeW9c4FYQIblCNzIySViofGMgZ87EVa6jhsihMlQw5910TNWScqXlqLAeh7KlJfjZ6rtudpjLDPBMtWS01gYo+n9tjxJkISHuAaYXDqWlP7A2J3rVQDjDMzEghn6Tw1D/4NLNGEIIx8TMm/L5u2EYZmZ4LGaaSrH6ZRqISPZgt4piJZ3a8Bk4lp+9P1ph60zcwDSQ0pmZmt43zaruV4FqGwLjUBCCGhNMvzcnXN0xQjRDDOi6L8Z30D4VtdO7GvZi8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/b2cd4695a5342e001c4d49f601e20eff/3d84d/1.png&quot;
+        srcset=&quot;/static/b2cd4695a5342e001c4d49f601e20eff/c26ae/1.png 158w,
+/static/b2cd4695a5342e001c4d49f601e20eff/6bdcf/1.png 315w,
+/static/b2cd4695a5342e001c4d49f601e20eff/3d84d/1.png 628w&quot;
+        sizes=&quot;(max-width: 628px) 100vw, 628px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Credit: Javatpoint.com&lt;/p&gt;
+&lt;p&gt;Eg to use for class and method is follow&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Target({ElementType.Type,ElementType.METHOD})&lt;/p&gt;
+&lt;p&gt;@interface parathan{&lt;/p&gt;
+&lt;p&gt;int age();&lt;/p&gt;
+&lt;p&gt;String name();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;2. &lt;strong&gt;@Retention&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Used to betoken for what level the annotation need to be available.&lt;/p&gt;
+&lt;p&gt;There are 3 level&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SOURCE — this refers the source code, which the annotation will not be available in compiled class.&lt;/li&gt;
+&lt;li&gt;CLASS — this refers to the .class file, which the annotation will not available to JVM but available for java compiler. So, it will be in the class file.&lt;/li&gt;
+&lt;li&gt;RUNTIME — refers runtime, which is available to bothe java compiler &amp;#x26; jvm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eg:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Retention(RetentionPolicy.RUNTIME)&lt;/p&gt;
+&lt;p&gt;@Target(ElementType.TYPE)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@interface&lt;/strong&gt; parathan{&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;int&lt;/strong&gt; age();&lt;/p&gt;
+&lt;p&gt;String name();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The above snippet represents the annotation will be available at the run time &amp;#x26; the annotation is targeted to the class.&lt;/p&gt;
+&lt;h3&gt;3. &lt;strong&gt;@Inherited&lt;/strong&gt; :&lt;/h3&gt;
+&lt;p&gt;Normally the annotations are not inherited to sub classes to inherit the annotation to sub class @Inherited is used.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;@Inherited&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@interface&lt;/strong&gt; parathan{ } //Now it will be available to subclass also&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@interface&lt;/strong&gt; parathan{ }&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;class&lt;/strong&gt; MainClass{}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;class&lt;/strong&gt; Subclass &lt;strong&gt;extends&lt;/strong&gt; MainClass{} //sub class extends the super class&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As the annotation “&lt;strong&gt;parathan&lt;/strong&gt;” is inherited;&lt;/p&gt;
+&lt;p&gt;the &lt;strong&gt;MainClass&lt;/strong&gt; uses the annotation as the &lt;strong&gt;SubClass&lt;/strong&gt; extends the &lt;strong&gt;MainClass&lt;/strong&gt;,&lt;/p&gt;
+&lt;p&gt;therefore, the &lt;strong&gt;SubClass&lt;/strong&gt; can also access the annotation&lt;/p&gt;
+&lt;h3&gt;4.@Documented&lt;/h3&gt;
+&lt;p&gt;It is used to include the annotation in the Java documentation.&lt;/p&gt;
+&lt;p&gt;The annotation I’m writing here, is because I’m posting &lt;a href=&quot;https://medium.com/@parathanlive123/rest-api-with-spring-boot-mysql-hibernate-jpa-part-1-introduction-only-2c42ab3c0867&quot;&gt;REST API in Java using Spring Boot &amp;#x26; MySQL&lt;/a&gt; as Parts.&lt;/p&gt;
+&lt;p&gt;So, there we are using a lot of annotations to make our tasks easy.&lt;/p&gt;
+&lt;p&gt;If I made any mistakes.. Please comment below. Or share with your friends.&lt;/p&gt;
+&lt;p&gt;Happy Coding Folks…!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Split & Map a String in Java]]></title><description><![CDATA[Hi, everyone. I’m learning the basic concepts of Java since last month. So, while I’m learning I did some example by my own. In future post…]]></description><link>https://parathantl.github.io/split-map-strings-in-java/</link><guid isPermaLink="false">https://parathantl.github.io/split-map-strings-in-java/</guid><pubDate>Thu, 27 Sep 2018 13:00:37 GMT</pubDate><content:encoded>&lt;p&gt;Hi, everyone. I’m learning the basic concepts of Java since last month. So, while I’m learning I did some example by my own. In future post I’m planning to publish those code with you about what I learnt &amp;#x26; how I did it.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 290px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f9d7c235c6cc93a1670229c7b2e39c1c/baa30/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHfXJA2gE//xAAaEAACAgMAAAAAAAAAAAAAAAAAAgEQESIx/9oACAEBAAEFAhZzTcSdj//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAEBAQAAAAAAAAAAAAAAAAABEAD/2gAIAQEABj8CzSf/xAAcEAAABgMAAAAAAAAAAAAAAAAAARARITFBYZH/2gAIAQEAAT8hDq18SBxgCnSf/9oADAMBAAIAAwAAABCoD//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxASaT//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QoX//xAAbEAEAAQUBAAAAAAAAAAAAAAABEQAQIUFRcf/aAAgBAQABPxBwU0qWmI8Was5ToQwZQGrf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/f9d7c235c6cc93a1670229c7b2e39c1c/baa30/1.jpg&quot;
+        srcset=&quot;/static/f9d7c235c6cc93a1670229c7b2e39c1c/ff44c/1.jpg 158w,
+/static/f9d7c235c6cc93a1670229c7b2e39c1c/baa30/1.jpg 290w&quot;
+        sizes=&quot;(max-width: 290px) 100vw, 290px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here, I want to show you how I split &amp;#x26; mapped a string which in the following format.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;key1=value1;key2=value2;key3=value3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is my code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import java.util.*;  
+  
+public class App {  
+  
+    public static void main (String args[]) {  
+  
+        Map&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;String, String&amp;gt;(); 
+        String gotData = &amp;quot;key1=value1;key2=value2;key3=value3&amp;quot;;
+        
+        if(gotData == **&amp;quot;&amp;quot;**){ 
+        	map = null;
+	} else {  
+  
+   		for(String keyValue : gotData.split(&amp;quot;;&amp;quot;)) {  
+        		String[] key = keyValue.split(&amp;quot;=&amp;quot;);  
+        		map.put(key[0], key[1]);  
+    		} 
+	}  
+        Map&amp;lt;String,String&amp;gt; finalOutput= map;  
+  
+        System.**_out_**.println(finalOutput);  
+  
+    }  
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Could you get it out…??&lt;/p&gt;
+&lt;p&gt;I’m explain it according to my knowledge…&lt;/p&gt;
+&lt;p&gt;I imported all java.util package modules to use “Map, Hash Map, put” keyword which are belong to the util package.&lt;/p&gt;
+&lt;p&gt;Then in the App class I declared a &lt;em&gt;map&lt;/em&gt; of datatype &lt;strong&gt;Map&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For loop is used to loop until the string fully read by the program.&lt;/p&gt;
+&lt;p&gt;Inside that if else is used to avoid the “ArrayBoundExcaption” which is very common exception when using Map, Arrays in Java.&lt;/p&gt;
+&lt;p&gt;Splitting the string by “ &lt;strong&gt;;&lt;/strong&gt; ” and “ &lt;strong&gt;=&lt;/strong&gt; ” and assigning the key to the o th index of Map &amp;#x26; value to the 1st index of Map&lt;/p&gt;
+&lt;p&gt;This is what I got as the output&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;{key1=value1, key2=value2, key3=value3}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/df53c864d35fc2e6281a71a44f60b6fb/1ff84/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.21518987341772%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnElEQVQY04XLQQ6CMBRF0e5/NTpzATJg4ICJEbFIofyW/rbQQhPUAMICxJObvNEjJWMVq2he3NMsL4FxWQsUjQaJfyOnc3KMboeYXq7pM3vQQlAmuDQSnVAd7EYSZmLmImqFbQMUphFgodYV9sqN3bzMy2/k836tM02T836wqkU0xmqtEdH7ftlF1g/nNchGofauC2EIm2ETwrjrCxr7F3U/5FqsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/df53c864d35fc2e6281a71a44f60b6fb/f058b/2.png&quot;
+        srcset=&quot;/static/df53c864d35fc2e6281a71a44f60b6fb/c26ae/2.png 158w,
+/static/df53c864d35fc2e6281a71a44f60b6fb/6bdcf/2.png 315w,
+/static/df53c864d35fc2e6281a71a44f60b6fb/f058b/2.png 630w,
+/static/df53c864d35fc2e6281a71a44f60b6fb/40601/2.png 945w,
+/static/df53c864d35fc2e6281a71a44f60b6fb/1ff84/2.png 1040w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Screenshot of What I got as Output using Debugger mode&lt;/p&gt;
+&lt;p&gt;for o (zero(th Index&lt;/p&gt;
+&lt;p&gt;value1 assigned to key1&lt;/p&gt;
+&lt;p&gt;value2 assigned to key2&lt;/p&gt;
+&lt;p&gt;value3 assigned to key3&lt;/p&gt;
+&lt;p&gt;If you have another simple code Share it in the comment.&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Uki — A life changing determinant]]></title><description><![CDATA[The youth need to be enabled to become job generators from job seekers — A.P.J.Abdul Kalam 
+Uki is a Tamil word which means a Catalyst for…]]></description><link>https://parathantl.github.io/uki-life-changing-determinant/</link><guid isPermaLink="false">https://parathantl.github.io/uki-life-changing-determinant/</guid><pubDate>Thu, 14 Jun 2018 13:00:37 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;The youth need to be enabled to become job generators from job seekers — A.P.J.Abdul Kalam&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fc3c68872289c98392dc72d233256680/29d31/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHdi2jAX//EABcQAAMBAAAAAAAAAAAAAAAAAAABEBH/2gAIAQEAAQUCG5hk/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAABAxAf/aAAgBAQAGPwIxUq//xAAbEAACAgMBAAAAAAAAAAAAAAAAARExEFFhwf/aAAgBAQABPyFu+HmxKbEthH//2gAMAwEAAgADAAAAEOvP/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Qp//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAECAQE/EIf/xAAeEAEAAgIBBQAAAAAAAAAAAAABESEAMWFxobHR8P/aAAgBAQABPxCKc3peJFolLDa/bw1eLS6FFds0eA9YEIVeXP/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Screenshot&quot;
+        title=&quot;Screenshot&quot;
+        src=&quot;/static/fc3c68872289c98392dc72d233256680/828fb/1.jpg&quot;
+        srcset=&quot;/static/fc3c68872289c98392dc72d233256680/ff44c/1.jpg 158w,
+/static/fc3c68872289c98392dc72d233256680/a6688/1.jpg 315w,
+/static/fc3c68872289c98392dc72d233256680/828fb/1.jpg 630w,
+/static/fc3c68872289c98392dc72d233256680/29d31/1.jpg 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Uki is a Tamil word which means a Catalyst for the youth of Jaffna &amp;#x26; Sri Lanka. It provides 6 months scholarship based coding accelerator program for the students who don’t get access to the state university or any other vocational education.&lt;/p&gt;
+&lt;p&gt;Information Technology is one of the fastest booming &amp;#x26; most significant field in Sri Lanka. Uki is a gateway for the students who are really fond of IT &amp;#x26; technology.&lt;/p&gt;
+&lt;p&gt;Preparing the local youth by  elevating their talents &amp;#x26; skills to get an industrial internship experience in the Tech Companies around Sri Lanka is the root concept of creation behind Uki.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The youth is the hope of our future — Jose Rizal&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As a student of Uki 2 Cohort, I have a responsibility to share my experience to the society to engage more youth like me to get empowered/boosted &amp;#x26; to be an IT professional or an entrepreneur in future.&lt;/p&gt;
+&lt;p&gt;Web development plays a major role in IT jobs. In that way, Uki has a curriculum on giving a full-scholarship based coding accelerator 6 months program for full-stack web-development.&lt;/p&gt;
+&lt;p&gt;Full-Stack web development means both Front-end &amp;#x26; back-end development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is front-end development?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Front-end is what we observe in the browser. The page which is visible to a website user. To design it basically 3 languages are used.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;li&gt;CSS&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition to these; there are some frameworks which help to design the front-end like&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;React JS — a front-end framework of JavaScript&lt;/li&gt;
+&lt;li&gt;Sass — preprocessor scripting language that compiled into CSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;were taught in Uki&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is back-end?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Back-end serves indirectly supports front-end to make website platform dynamic; that means we can make requests and get responses from a server and getting/storing data to the database.&lt;/p&gt;
+&lt;p&gt;In that way; following languages were taught in Uki&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node JS, Express — a framework of Node JS&lt;/li&gt;
+&lt;li&gt;Mongo DB as Database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Above back-end, languages are latest &amp;#x26; fast growing technologies in web development.&lt;/p&gt;
+&lt;p&gt;As new technologies are taught here, students can get more opportunities in the IT industry.&lt;/p&gt;
+&lt;p&gt;Is coding is the only activity we did in Uki…???&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We have 2 clubs in Uki to bolster our future professional life.&lt;/p&gt;
+&lt;p&gt;They are&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Uki Fitness Club&lt;/li&gt;
+&lt;li&gt;Uki Gavel Club&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In Fitness club we practiced doing exercise, yoga &amp;#x26; meditation.&lt;/p&gt;
+&lt;p&gt;Full-time coding may become anxiety for programmers. To &lt;strong&gt;refresh our mind&lt;/strong&gt;, to &lt;strong&gt;breath new air&lt;/strong&gt; in the morning &amp;#x26; to &lt;strong&gt;keep us awake for the whole day&lt;/strong&gt; fitness club helped us a lot.&lt;/p&gt;
+&lt;p&gt;Gavel club helped us a lot to &lt;strong&gt;strengthen the English communication &amp;#x26; conversation skill &amp;#x26; diminished our stage fear&lt;/strong&gt;. Having Gavel club which is a youth version of Toastmasters developed the prepared &amp;#x26; impromptu speech delivering capabilities a lot.&lt;/p&gt;
+&lt;p&gt;We did projects such as:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Inside:&lt;/strong&gt; Every Monday &amp;#x26; Thursday every student should speak English. If they do not obey they will have a punishment speech in Uki. For the first time it looked so weird, but later on, it became easy just like speaking Tamil in our day to day life.&lt;/p&gt;
+&lt;p&gt;And another one provided by Gavel Club is Tech Talk. Tech Talk is a kind of session which would be done by a student per week on what technology s/he is special. He/She has to take a session by explaining through presentation about any technology s/he know. Through tech talk we got to know many information about the new technologies &amp;#x26; practiced to search and prepare for our own tech talk every week.&lt;/p&gt;
+&lt;p&gt;There is a huge opportunity for the students who graduate from Uki; because Uki teaches the students &lt;strong&gt;not to memorize or study in a conventional method.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It teaches a simple way of&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Search &amp;#x26; learn.!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In addition to self-learning, we have practiced using some professional way of communication &amp;#x26; programming tools such as Slack, Trello &amp;#x26; Github. These are latest tools which are used by the popular tech companies around the world.&lt;/p&gt;
+&lt;p&gt;To get hands-on experience in the technologies we studied in Uki;&lt;/p&gt;
+&lt;p&gt;we did many in-class exercises, 3 Assignments with VIVA &amp;#x26;&lt;/p&gt;
+&lt;p&gt;4 fun works such as&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Getting API key from the Sound cloud website &amp;#x26; creating an on-line music website by our own creativity&lt;/li&gt;
+&lt;li&gt;Using CRUD operation — a note-taking app to create a note/edit that note or to delete that note&lt;/li&gt;
+&lt;li&gt;Tic Tac Toe Game using React JS framework&lt;/li&gt;
+&lt;li&gt;Authentication site with login &amp;#x26; sign up facilities using React JS&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We maintained a blog to write what we have studied until now in Uki. The habit of maintaining a blog on what we have studied helped a lot to revise the subjects we studied &amp;#x26; the writing skill.&lt;/p&gt;
+&lt;p&gt;here is my blog : &lt;a href=&quot;http://parathanuki2.blogspot.com/&quot;&gt;http://parathanuki2.blogspot.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The instructors helped &amp;#x26; cared for us to achieve the state what we are now.&lt;/p&gt;
+&lt;p&gt;We were introduced to on-line code-learning sites such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Codecademy — &lt;a href=&quot;https://www.codecademy.com/&quot;&gt;https://www.codecademy.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Freecodecamp — &lt;a href=&quot;https://www.freecodecamp.org/&quot;&gt;https://www.freecodecamp.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hackerrank — &lt;a href=&quot;http://www.hackerrank.com/&quot;&gt;http://www.hackerrank.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Codewars — &lt;a href=&quot;https://www.codewars.com/&quot;&gt;https://www.codewars.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From the above-mentioned site, we started to taste the programming fruit.&lt;/p&gt;
+&lt;p&gt;Having &lt;strong&gt;workshops on tech-related topics&lt;/strong&gt; from the people who are well recognized in that field is a good opportunity for us to get deep exposure into that field.&lt;/p&gt;
+&lt;p&gt;Main Workshop we participated during Uki Cohort 2 are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Agile — Scrum — Project Management&lt;/li&gt;
+&lt;li&gt;Ionic / Angular JS — Android Development&lt;/li&gt;
+&lt;li&gt;Product Management&lt;/li&gt;
+&lt;li&gt;Project Management&lt;/li&gt;
+&lt;li&gt;IOT Workshop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We got huge knowledge in Scrum methodologies to pre-plan &amp;#x26; implement on our final project.&lt;/p&gt;
+&lt;p&gt;IOT workshop was a fabulous experience to learn how new world is. All the things in this world could be connected to the internet. For example, the fridge door isn’t locked well… a security alert could be sent to the house members mobile.&lt;/p&gt;
+&lt;p&gt;As a growing IT enthusiast in the technology world, this kind of workshop helps a lot to improve our self to emphasize the interest in programming &amp;#x26; to learn new technologies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Meeting MBA students from Stanford University&lt;/strong&gt; gave us a new dimension. We shared our final project ideas &amp;#x26; had an excellent conversation with joyful presentation style and got many ideas to enhance the idea more vivid.&lt;/p&gt;
+&lt;p&gt;To enrich the student’s English knowledge; students are enrolled in an English course in British Council Jaffna for about 3 months.&lt;/p&gt;
+&lt;p&gt;Through British Council, we become familiar with presentation &amp;#x26; email writing skills for the professional life. Lot of exercises to improve grammar &amp;#x26; speaking skills were enriched through this course.&lt;/p&gt;
+&lt;p&gt;Normally in British Council; &lt;strong&gt;Jaffna people will step backward to study as the cost is high&lt;/strong&gt;. But &lt;strong&gt;Uki offered it in a scholarship&lt;/strong&gt;; funded by the people who care to help to develop Jaffna &amp;#x26; Sri Lanka.&lt;/p&gt;
+&lt;p&gt;The important key to becoming an IT professional is having a developed personality.&lt;/p&gt;
+&lt;p&gt;To get such qualities Uki gave us a personal coaching session on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic Finance&lt;/li&gt;
+&lt;li&gt;Business model and Business model innovation&lt;/li&gt;
+&lt;li&gt;Legal and Professional ethics&lt;/li&gt;
+&lt;li&gt;Sales, Marketing, and promotion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;to mold our self for the future professional life in the Software industry.&lt;/p&gt;
+&lt;p&gt;In personal coaching, we learned to behave professionally in work environment by doing activities like debate, role plays, learn to construct our CV &amp;#x26; maintaining the Linked In profile.&lt;/p&gt;
+&lt;p&gt;Definitely, I can say Uki turned my life to a different path.&lt;/p&gt;
+&lt;p&gt;Every Uki student is grateful to the well-wishers &amp;#x26; the people who initiated &amp;#x26; supported. Especially Yarl IT Hub, The instructors — Vithushan, Dharshi, Personal coaching — Mathangie &amp;#x26; ITEE Foundation.&lt;/p&gt;</content:encoded></item></channel></rss>
