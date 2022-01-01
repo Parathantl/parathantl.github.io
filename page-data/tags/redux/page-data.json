@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/redux/","result":{"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":1,"blogPosts":[{"node":{"fields":{"slug":"/getting-started-with-redux/"},"frontmatter":{"title":"Getting Started with Redux — Beginners"}}}]}},"pageContext":{"tag":"Redux"}},"staticQueryHashes":["2841359383","2944715102"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/redux/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":1,"blogPosts":[{"node":{"fields":{"slug":"/getting-started-with-redux/"},"frontmatter":{"title":"Getting Started with Redux — Beginners"}}}]}},"pageContext":{"tag":"Redux"}},
+    "staticQueryHashes": ["2841359383","2944715102"]}

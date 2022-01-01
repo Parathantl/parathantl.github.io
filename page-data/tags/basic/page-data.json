@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/basic/","result":{"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":3,"blogPosts":[{"node":{"fields":{"slug":"/threads-in-programming/"},"frontmatter":{"title":"Threads in Programming"}}},{"node":{"fields":{"slug":"/intro-deadlock-in-operating-system/"},"frontmatter":{"title":"Intro to Deadlock in Operating System"}}},{"node":{"fields":{"slug":"/zero-to-one-in-object-oriented-concepts/"},"frontmatter":{"title":"Zero to One in Object Oriented Concepts"}}}]}},"pageContext":{"tag":"Basic"}},"staticQueryHashes":["2841359383","2944715102"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/basic/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":3,"blogPosts":[{"node":{"fields":{"slug":"/threads-in-programming/"},"frontmatter":{"title":"Threads in Programming"}}},{"node":{"fields":{"slug":"/intro-deadlock-in-operating-system/"},"frontmatter":{"title":"Intro to Deadlock in Operating System"}}},{"node":{"fields":{"slug":"/zero-to-one-in-object-oriented-concepts/"},"frontmatter":{"title":"Zero to One in Object Oriented Concepts"}}}]}},"pageContext":{"tag":"Basic"}},
+    "staticQueryHashes": ["2841359383","2944715102"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/database/","result":{"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":1,"blogPosts":[{"node":{"fields":{"slug":"/acid-properties-in-rdbms/"},"frontmatter":{"title":"ACID Properties in RDBMS"}}}]}},"pageContext":{"tag":"Database"}},"staticQueryHashes":["2841359383","2944715102"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/database/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Parathan's blog"}},"allMarkdownRemark":{"totalCount":1,"blogPosts":[{"node":{"fields":{"slug":"/acid-properties-in-rdbms/"},"frontmatter":{"title":"ACID Properties in RDBMS"}}}]}},"pageContext":{"tag":"Database"}},
+    "staticQueryHashes": ["2841359383","2944715102"]}
